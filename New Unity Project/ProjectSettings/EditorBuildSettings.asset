@@ -4,5 +4,8 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/GDS220.unity
+    guid: a14e19db4c28ab54bb0d4c8542807319
   m_configObjects: {}

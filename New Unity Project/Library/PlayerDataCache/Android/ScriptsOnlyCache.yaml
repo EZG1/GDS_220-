@@ -5,7 +5,9 @@ ScriptsOnlyBuild:
     Assembly-CSharp.dll:
     - ONSPSettings
     - Oculus.Platform.PlatformSettings
+    - OvrAvatarSettings
     Oculus.VR.Editor.dll:
+    - Assets.Oculus.VR.Editor.OVRPlatformToolSettings
     - OVRConfig
     Oculus.VR.dll:
     - OVRCameraRig
@@ -18,10 +20,8 @@ ScriptsOnlyBuild:
     Unity.RenderPipelines.Lightweight.Runtime.dll:
     - UnityEngine.Rendering.LWRP.ForwardRendererData
     - UnityEngine.Rendering.LWRP.LightweightRenderPipelineAsset
-    - UnityEngine.Rendering.LWRP.LightweightRenderPipelineEditorResources
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
-    - UnityEditor.TestTools.TestRunner.TestListCacheData
   sceneClasses:
     Assets/Scenes/GDS220.unity:
     - Class: 1
@@ -44,6 +44,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 54
       Script: {instanceID: 0}
+    - Class: 64
+      Script: {instanceID: 0}
     - Class: 65
       Script: {instanceID: 0}
     - Class: 81
@@ -61,27 +63,31 @@ ScriptsOnlyBuild:
     - Class: 109
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 10092}
+      Script: {instanceID: 10100}
     - Class: 114
-      Script: {instanceID: 10196}
+      Script: {instanceID: 10204}
     - Class: 114
-      Script: {instanceID: 10346}
+      Script: {instanceID: 10356}
     - Class: 114
-      Script: {instanceID: 10676}
+      Script: {instanceID: 10686}
     - Class: 114
-      Script: {instanceID: 11188}
+      Script: {instanceID: 11198}
     - Class: 114
-      Script: {instanceID: 11532}
+      Script: {instanceID: 11266}
     - Class: 114
-      Script: {instanceID: 11798}
+      Script: {instanceID: 11542}
     - Class: 114
-      Script: {instanceID: 11980}
+      Script: {instanceID: 11810}
     - Class: 114
-      Script: {instanceID: 12642}
+      Script: {instanceID: 11992}
     - Class: 114
-      Script: {instanceID: 12772}
+      Script: {instanceID: 12654}
     - Class: 114
-      Script: {instanceID: 13350}
+      Script: {instanceID: 12784}
+    - Class: 114
+      Script: {instanceID: 13362}
+    - Class: 114
+      Script: {instanceID: 13472}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 124
@@ -1773,6 +1779,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp-firstpass.dll
     namespaceName: UnityStandardAssets.Utility
     className: TimedObjectDestructor
+  - hash:
+      serializedVersion: 2
+      Hash: 0297107f8cbf245b6ae825767e0ee5e3
+    assemblyName: Oculus.VR.Editor.dll
+    namespaceName: Assets.Oculus.VR.Editor
+    className: OVRPlatformToolSettings
   - hash:
       serializedVersion: 2
       Hash: 492e4075bfded9fb3f0d520048f29f83
