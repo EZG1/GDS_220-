@@ -8,6 +8,7 @@ public class Movement : MonoBehaviour
 {
     public Text pressText1;
     public Text pressText2;
+    public Transform reset;
 
     // Start is called before the first frame update
     void Start()
@@ -18,7 +19,7 @@ public class Movement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        // move forward if button is pressed
+       /* // move forward if button is pressed
         if (OVRInput.Get(OVRInput.Button.One) == true)
         {
             transform.position += new Vector3(0,0,1);
@@ -32,17 +33,21 @@ public class Movement : MonoBehaviour
         //if trigger is used reset location
         if (OVRInput.Get(OVRInput.Button.PrimaryIndexTrigger) == true)
         {
-            this.transform.position =  new Vector3(0, 5, 0);
+            this.transform.position =  new Vector3(0, 0, 5);
             pressText2.text = "You have pressed the trigger";
         }
         else
         {
             pressText2.text = "You have NOT pressed the trigger";
         }
-
-        /*if Input.GetButtonDown(KeyCode.Space)
+        */
+        if (Input.GetKeyDown(KeyCode.X))
          {
-            print(yes);
-         }*/
+            print("yes");
+            Debug.Log("This object: " + transform.position);
+            Debug.Log("Reset pos: " + reset.position);
+            transform.position = reset.position;
+        }
+
     }
 }

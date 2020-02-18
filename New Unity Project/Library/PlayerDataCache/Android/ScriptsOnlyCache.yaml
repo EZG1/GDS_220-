@@ -1138,7 +1138,7 @@ ScriptsOnlyBuild:
     className: ColorGrabbable
   - hash:
       serializedVersion: 2
-      Hash: c970387ab8575867461a277935453db3
+      Hash: bd9f2815156836892f718d302ea7449c
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Movement
