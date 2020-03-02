@@ -11,7 +11,7 @@ public class BallSpawner : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        InvokeRepeating("Spawn", 1.0f, 4.0f);
+        InvokeRepeating("Spawn", 1.0f, 2.0f);
     }
 
     // Update is called once per frame
@@ -22,7 +22,6 @@ public class BallSpawner : MonoBehaviour
 
     void Spawn()
     {
-        Debug.Log("ASD");
-        Instantiate(ballPrefab, spawnLoc);
+        Instantiate(ballPrefab, transform.position, Quaternion.identity);
     }
 }

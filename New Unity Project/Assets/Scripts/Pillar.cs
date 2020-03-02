@@ -4,12 +4,12 @@ using UnityEngine;
 
 public class Pillar : MonoBehaviour
 {
-    float startPos;
-    float startSpeed;
-    public float targetPos;
-    public float speed;
+    float startPos; //starting position of pillar
+    float startSpeed; //base speed of pillar
+    public float targetPos; //the target position that the pillar wants to move to *NOT IN USE AT THE MOMENT*
+    public float speed; //the speed at which the pillar will move
 
-    bool isWaiting;
+    bool isWaiting; //checks to see if the pillar is waiting. if it is waiting, it wont be moved by the script.
 
 
 
@@ -27,12 +27,14 @@ public class Pillar : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //if the pillar's position isn't near the target position, then move towards it.
+        //*NOT IN USE AT THE MOMENT*
         /*if (Mathf.Abs(transform.position.y - targetPos) > 0.1)
         {
-            Debug.Log("ASD");
             transform.position = Vector3.MoveTowards(transform.position, new Vector3(transform.position.x, targetPos, transform.position.z), speed * Time.deltaTime);
         }*/
 
+        //if the pillar isn't currently waiting, then move the pillar up
         if (!isWaiting)
         {
             transform.position = new Vector3(transform.position.x, transform.position.y + speed * Time.deltaTime, transform.position.z);
@@ -44,19 +46,18 @@ public class Pillar : MonoBehaviour
             transform.position = new Vector3(transform.position.x, startPos, transform.position.z);
             isWaiting = true;
         }
-
-        if (Input.GetKeyDown("e"))
-        {
-            speed = 20f;
-            isWaiting = false;
-        }
     }
 
     public void NewTarget(float newPos, float newSpeed)
-    {/*
+    {
         targetPos = newPos;
-        speed = newSpeed;*/
+        speed = newSpeed;
 
+        
+    }
+
+    public void Jump(float newSpeed)
+    {
         speed = newSpeed;
         isWaiting = false;
     }
