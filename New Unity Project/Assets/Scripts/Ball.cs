@@ -5,61 +5,60 @@ using UnityEngine;
 public class Ball : MonoBehaviour
 {
     float ballSpeed; //the speed at which the ball itself will move
+    float pillarSpeed; //the speed at which the pillar will move
 
-    //public float pillarPos; //the position we want the pillar to move *NOT IN USE AT THE MOMENT*
-    public float pillarSpeed; //the speed at which the pillar will move
+    bool canMove;
+    bool canGrow;
 
-    public bool isTest; //used for testing purposes.
-
-    Rigidbody rb;
+    Vector3 direction;
+    float scaleSpeed;
 
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
-        //pillarPos = 8;
-        pillarSpeed = 20;
-
-        ballSpeed = 30;
-
-        rb = GetComponent<Rigidbody>();
-
-        if (!isTest)
-        {
-            Destroy(gameObject, 5);
-        }
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (!isTest)
+        if (canMove)
         {
-            //moves the ball automatically
-            transform.position = new Vector3(transform.position.x + ballSpeed * Time.deltaTime, transform.position.y, transform.position.z);
+            transform.position += direction.normalized * ballSpeed * Time.deltaTime;
+        }
+
+        if (canGrow)
+        {
+            transform.localScale += new Vector3(scaleSpeed, scaleSpeed, scaleSpeed) * Time.deltaTime;
         }
     }
 
     //if the ball comes into contact with a pillar, it will trigger the pillar to move
     private void OnTriggerEnter(Collider other)
     {
-        /*if (other.gameObject.tag == "Pillar")
-        {
-            other.GetComponent<Pillar>().NewTarget(pillarPos, pillarSpeed);
-        }*/
-
-        if (other.gameObject.tag == "Pillar")
+        if (other.GetComponent<Pillar>())
         {
             other.GetComponent<Pillar>().Jump(pillarSpeed);
         }
     }
 
-    //This resets the pillar wants the ball leaves the pillar's collision box.
-    //*NOT IN USE AT THE MOMENT*
     private void OnTriggerExit(Collider other)
     {
-        if (other.gameObject.tag == "Pillar")
-        {
-            other.GetComponent<Pillar>().Reset();
-        }
+
+    }
+
+    //when a ball is instantiated, set these 2 functions if you want the ball to move or increase in size, or both.
+    public void SetMove(Vector3 newDirection, float newBallSpeed, float newPillarSpeed)
+    {
+        canMove = true;
+        direction = newDirection;
+        ballSpeed = newBallSpeed;
+        pillarSpeed = newPillarSpeed;
+    }
+
+    public void SetScale(float newScaleSpeed, float newPillarSpeed)
+    {
+        canGrow = true;
+        scaleSpeed = newScaleSpeed;
+        pillarSpeed = newPillarSpeed;
     }
 }

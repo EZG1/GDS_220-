@@ -9,7 +9,9 @@ public class Pillar : MonoBehaviour
     public float targetPos; //the target position that the pillar wants to move to *NOT IN USE AT THE MOMENT*
     public float speed; //the speed at which the pillar will move
 
-    bool isWaiting; //checks to see if the pillar is waiting. if it is waiting, it wont be moved by the script.
+    bool isIdle; //checks to see if the pillar is idle. if it is waiting, it wont be moved by the script.
+
+    bool isActive;
 
 
 
@@ -21,50 +23,65 @@ public class Pillar : MonoBehaviour
         targetPos = startPos;
         speed = startSpeed;
 
-        isWaiting = true;
+        isIdle = true;
+        isActive = true;
     }
 
     // Update is called once per frame
     void Update()
     {
-        //if the pillar's position isn't near the target position, then move towards it.
-        //*NOT IN USE AT THE MOMENT*
-        /*if (Mathf.Abs(transform.position.y - targetPos) > 0.1)
-        {
-            transform.position = Vector3.MoveTowards(transform.position, new Vector3(transform.position.x, targetPos, transform.position.z), speed * Time.deltaTime);
-        }*/
-
-        //if the pillar isn't currently waiting, then move the pillar up
-        if (!isWaiting)
+        //if the pillar isn't currently idle, then move the pillar up
+        if (!isIdle && isActive)
         {
             transform.position = new Vector3(transform.position.x, transform.position.y + speed * Time.deltaTime, transform.position.z);
-            speed -= 0.2f;
+            speed -= 0.2f; //lowers the speed over time to act like gravity
         }
 
+        //if the pillar is deactivated and is in the air, it will quickly fall down
+        if (!isActive && transform.position.y > startPos)
+        {
+            speed = -30f;
+            transform.position = new Vector3(transform.position.x, transform.position.y + speed * Time.deltaTime, transform.position.z);
+        }
+
+        //if the pillar is currently idle but the start(landing/rest) position has been changed to be lower, then it will slowly move down to new position
+        if (isIdle && transform.position.y > startPos)
+        {
+            speed = -5f;
+            transform.position = new Vector3(transform.position.x, transform.position.y + speed * Time.deltaTime, transform.position.z);
+        }
+
+
+        //if the pillar goes below its starting position, it is reset and set to idle so it will no longer be moved until prompted
+        //so currently pillars won't be able to go lower than their starting position
+        //can be changed to accomodate that when necessary
         if (transform.position.y < startPos)
         {
             transform.position = new Vector3(transform.position.x, startPos, transform.position.z);
-            isWaiting = true;
+            isIdle = true;
         }
-    }
-
-    public void NewTarget(float newPos, float newSpeed)
-    {
-        targetPos = newPos;
-        speed = newSpeed;
-
-        
     }
 
     public void Jump(float newSpeed)
     {
         speed = newSpeed;
-        isWaiting = false;
+        isIdle = false;
     }
 
-    public void Reset()
-    {/*
-        targetPos = startPos;
-        speed = startSpeed;*/
+    public void SetActive(bool active)
+    {
+        if (active)
+        {
+            isActive = true;
+        }
+        else
+        {
+            isActive = false;
+        }
+    }
+
+    public void SetPosition(float position)
+    {
+        startPos = position;
     }
 }

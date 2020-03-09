@@ -399,8 +399,11 @@
     <Compile Include="Assets\Rock Assets\Rocks and Boulders 2\Shaders\RotateGameObject.cs" />
     <Compile Include="Assets\Scripts\Ball.cs" />
     <Compile Include="Assets\Scripts\BallSpawner.cs" />
+    <Compile Include="Assets\Scripts\ForceField.cs" />
     <Compile Include="Assets\Scripts\GameManager.cs" />
     <Compile Include="Assets\Scripts\Pillar.cs" />
+    <Compile Include="Assets\Scripts\PillarTrigger.cs" />
+    <Compile Include="Assets\Scripts\SimplePillar.cs" />
     <None Include="Assets\Rock Assets\Rocks and Boulders 2\Shaders\shader info.txt" />
     <None Include="Assets\Oculus\Avatar\Resources\Materials\Version1.5\Avatar_PC_SingleComponent.shader" />
     <None Include="Assets\Oculus\Avatar\Samples\CrossPlatform\Readme.txt" />
