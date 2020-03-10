@@ -34,7 +34,10 @@ public class Pillar : MonoBehaviour
         if (!isIdle && isActive)
         {
             transform.position = new Vector3(transform.position.x, transform.position.y + speed * Time.deltaTime, transform.position.z);
-            speed -= 0.2f; //lowers the speed over time to act like gravity
+            if (speed > -4f)
+            {
+                speed -= 0.2f; //lowers the speed over time to act like gravity
+            }
         }
 
         //if the pillar is deactivated and is in the air, it will quickly fall down

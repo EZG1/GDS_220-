@@ -9,17 +9,15 @@ public class PillarTrigger : MonoBehaviour
     public Transform ballLoc;
 
     public List<GameObject> pillars;
-    
+
     // Start is called before the first frame update
     void Start()
     {
-        
     }
 
     // Update is called once per frame
     void Update()
     {
-        
     }
 
     private void OnTriggerEnter(Collider other)
@@ -35,8 +33,10 @@ public class PillarTrigger : MonoBehaviour
             }
 
             GameObject obj = Instantiate(ballPrefab, ballLoc.position, Quaternion.identity);
-            obj.GetComponent<Ball>().SetScale(50f, 30f);
+            obj.GetComponent<Ball>().SetScale(20f, 10f);
             Destroy(obj, 3);
         }
     }
+
+
 }
