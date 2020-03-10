@@ -13,14 +13,27 @@ public class Ball : MonoBehaviour
     Vector3 direction;
     float scaleSpeed;
 
+    //variable to conrtor height variation
+    private int speedAlterationVariance = 10;
+    private int speedAlteration = 1;
+    private bool speedAlterationMovingUp = true;
+
     // Start is called before the first frame update
     void Awake()
     {
+        speedAlteration = Random.Range(1, 10);
+        if (Random.Range(1,2) == 1)
+        {
+            speedAlterationMovingUp = false;
+        }
+        
+        InvokeRepeating("Variation", 1.0f, 0.07f);
     }
 
     // Update is called once per frame
     void Update()
     {
+        print(speedAlteration);
         if (canMove)
         {
             transform.position += direction.normalized * ballSpeed * Time.deltaTime;
@@ -37,7 +50,7 @@ public class Ball : MonoBehaviour
     {
         if (other.GetComponent<Pillar>())
         {
-            other.GetComponent<Pillar>().Jump(pillarSpeed);
+            other.GetComponent<Pillar>().Jump(pillarSpeed + speedAlteration);
         }
     }
 
@@ -61,4 +74,28 @@ public class Ball : MonoBehaviour
         scaleSpeed = newScaleSpeed;
         pillarSpeed = newPillarSpeed;
     }
+
+
+    //change variation
+    private void Variation()
+    {
+        if (speedAlterationMovingUp == true)
+        {
+            if (speedAlteration >= speedAlterationVariance)
+            {
+                speedAlterationMovingUp = false;
+            }
+            speedAlteration += 2;
+
+        }
+        else
+        {
+            if (speedAlteration <= 1)
+            {
+                speedAlterationMovingUp = true;
+            }
+            speedAlteration -= 2;
+        }
+    }
+
 }
