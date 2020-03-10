@@ -33,9 +33,17 @@ MonoBehaviour:
   - __PanelContainer__rootVisualContainer__e469ad05ddec2cb4281f1e8e051b9794__MaterialGraphView__UnityEditor.Experimental.GraphView.GraphView+PersistedSelection
   - __PanelContainer__rootVisualContainer__74563b252a20a974981570527c585e3c__MaterialGraphView__UnityEditor.Experimental.GraphView.GraphView+PersistedViewTransform
   - __PanelContainer__rootVisualContainer__74563b252a20a974981570527c585e3c__MaterialGraphView__UnityEditor.Experimental.GraphView.GraphView+PersistedSelection
+  - __PanelContainer__rootVisualContainer__cee61fb7b9ad4b44898ead3e00d21646__MaterialGraphView__UnityEditor.Experimental.GraphView.GraphView+PersistedViewTransform
+  - __PanelContainer__rootVisualContainer__cee61fb7b9ad4b44898ead3e00d21646__MaterialGraphView__UnityEditor.Experimental.GraphView.GraphView+PersistedSelection
+  - __PanelContainer__rootVisualContainer__dc8d46445de96f54fa736eb9947a6f1f__MaterialGraphView__UnityEditor.Experimental.GraphView.GraphView+PersistedViewTransform
+  - __PanelContainer__rootVisualContainer__dc8d46445de96f54fa736eb9947a6f1f__MaterialGraphView__UnityEditor.Experimental.GraphView.GraphView+PersistedSelection
+  - __PanelContainer__rootVisualContainer__fd907e62cb711ef4188a416f3e3f1e60__MaterialGraphView__UnityEditor.Experimental.GraphView.GraphView+PersistedViewTransform
+  - __PanelContainer__rootVisualContainer__fd907e62cb711ef4188a416f3e3f1e60__MaterialGraphView__UnityEditor.Experimental.GraphView.GraphView+PersistedSelection
   m_Values:
   - '{}'
   - '{}'
+  - '{"position":{"x":842.0,"y":821.3333129882813,"z":0.0},"scale":{"x":0.5717532634735107,"y":0.5717532634735107,"z":1.0}}'
+  - '{"m_Version":2,"m_SelectedElementsArray":[]}'
   - '{}'
   - '{}'
   - '{}'
@@ -50,7 +58,11 @@ MonoBehaviour:
   - '{}'
   - '{}'
   - '{}'
-  - '{"position":{"x":1687.3333740234375,"y":182.0,"z":0.0},"scale":{"x":0.9335006475448608,"y":0.9335006475448608,"z":1.0}}'
-  - '{"m_Version":0,"m_SelectedElementsArray":[]}'
+  - '{}'
+  - '{}'
+  - '{}'
+  - '{}'
+  - '{}'
+  - '{}'
   - '{}'
   - '{}'
