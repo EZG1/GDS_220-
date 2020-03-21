@@ -6,7 +6,7 @@ public class A_TransformMod : MonoBehaviour
 {
     public int _band;
     public float _startScale, _scaleMultiplier;
-    public bool _useBuffer;
+    private bool _useBuffer = true;
     // Start is called before the first frame update
     void Start()
     {

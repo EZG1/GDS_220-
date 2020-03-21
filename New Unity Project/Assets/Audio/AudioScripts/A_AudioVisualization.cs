@@ -5,20 +5,23 @@ using UnityEngine;
 public class A_AudioVisualization : MonoBehaviour
 {
     AudioSource _audioSource;
-    public float peakSmoothness;
-    float[] _samples = new float[512];
+    public static float[] _samplesLeft = new float[512];     
+    public static float[] _samplesRight = new float[512]; 
     float[] _freqBand = new float[8];
     float[] _bandBuffer = new float[8];
     float[] _bufferDecrease = new float[8];
 
-    public float[] _freqBandHighest = new float[8];
+    float[] _freqBandHighest = new float[8];
     public static float[] _audioBand = new float[8];
     public static float[] _audioBandBuffer = new float[8];
 
     public static float _Amplitude, _amplitudeBuffer;
     float _amplitudeHighest;
-    public float _audioProfile;
-    // Start is called before the first frame update
+    float _audioProfile = 5;
+
+    public enum _channel {Stereo, Left, Right};
+    public _channel channel = new _channel();
+
     void Start()
     {
         _audioSource = GetComponent<AudioSource>();
@@ -78,7 +81,7 @@ public class A_AudioVisualization : MonoBehaviour
             if (_freqBand[g] > _bandBuffer[g])
             {
                 _bandBuffer[g] = _freqBand[g];
-                _bufferDecrease[g] = peakSmoothness;
+                _bufferDecrease[g] = 0.005f;
             }
             if (_freqBand[g] < _bandBuffer[g])
             {
@@ -90,7 +93,8 @@ public class A_AudioVisualization : MonoBehaviour
     }
     void GetSpectrumAudioSource()
     {
-        _audioSource.GetSpectrumData(_samples, 0, FFTWindow.Blackman);
+        _audioSource.GetSpectrumData(_samplesLeft, 0, FFTWindow.Blackman);  //Left Channel Spectrum Data
+        _audioSource.GetSpectrumData(_samplesRight, 1, FFTWindow.Blackman); //Right Channel Spectrum Data
 
     }
     void MakeFreuquencyBands()
@@ -108,7 +112,19 @@ public class A_AudioVisualization : MonoBehaviour
             }
             for (int j = 0; j < sampleCount; j++)
             {
-                average += _samples[count] * (count + 1);
+                if (channel == _channel.Stereo) //If Channel is set to Stereo the Left&Right Sample Data will be used. 
+                {
+                    average += _samplesLeft[count] + _samplesRight[count] * (count + 1);
+                }
+                if (channel == _channel.Left) //If Channel is set to Left only the Left Sample Data will be used. 
+                {
+                    average += _samplesLeft[count] * (count + 1);
+                }
+                if (channel == _channel.Right) //If Channel is set to Right only the Left Sample Data will be used. 
+                {
+                    average += _samplesRight[count] * (count + 1);
+                }
+                
                 count++;
             }
             average /= count;
