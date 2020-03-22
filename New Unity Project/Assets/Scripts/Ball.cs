@@ -4,14 +4,14 @@ using UnityEngine;
 
 public class Ball : MonoBehaviour
 {
-    float ballSpeed; //the speed at which the ball itself will move
-    float pillarSpeed; //the speed at which the pillar will move
+    public float ballSpeed; //the speed at which the ball itself will move
+    public float pillarSpeed; //the speed at which the pillar will move
 
-    bool canMove;
-    bool canGrow;
+    public bool canMove;
+    public bool canGrow;
 
-    Vector3 direction;
-    float scaleSpeed;
+    public Vector3 direction;
+    public float scaleSpeed;
 
     //variable to conrtor height variation
     private int speedAlterationVariance = 10;
@@ -33,7 +33,6 @@ public class Ball : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        print(speedAlteration);
         if (canMove)
         {
             transform.position += direction.normalized * ballSpeed * Time.deltaTime;

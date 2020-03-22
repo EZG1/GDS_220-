@@ -106,6 +106,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 85a9138ceb51c6943bc25a1fc440a5ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ballSpeed: 0
+  pillarSpeed: 0
+  canMove: 0
+  canGrow: 0
+  direction: {x: 0, y: 0, z: 0}
+  scaleSpeed: 0
 --- !u!54 &1925077440609838438
 Rigidbody:
   m_ObjectHideFlags: 0
