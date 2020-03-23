@@ -53,28 +53,6 @@ public class Ball : MonoBehaviour
         }
     }
 
-    private void OnTriggerExit(Collider other)
-    {
-
-    }
-
-    //when a ball is instantiated, set these 2 functions if you want the ball to move or increase in size, or both.
-    public void SetMove(Vector3 newDirection, float newBallSpeed, float newPillarSpeed)
-    {
-        canMove = true;
-        direction = newDirection;
-        ballSpeed = newBallSpeed;
-        pillarSpeed = newPillarSpeed;
-    }
-
-    public void SetScale(float newScaleSpeed, float newPillarSpeed)
-    {
-        canGrow = true;
-        scaleSpeed = newScaleSpeed;
-        pillarSpeed = newPillarSpeed;
-    }
-
-
     //change variation
     private void Variation()
     {

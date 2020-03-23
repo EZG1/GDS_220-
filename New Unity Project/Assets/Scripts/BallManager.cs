@@ -2,6 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+//In the inspector of the BallManager object (under the Audio object) you can add entries to it and make more cues for when and where the ball will spawn.
+//To add more cues, increase the size of the "Manager" list and then you can manually edit the values as desired.
+
 [System.Serializable]
 public struct ScalingDetails
 {
@@ -65,8 +68,8 @@ public class BallManager : MonoBehaviour
     [Tooltip("Increase size to add entries to control ball spawning & pillar movement")]
     public List<BallData> manager = new List<BallData>();
 
-
     AudioSource audioSource;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -74,6 +77,7 @@ public class BallManager : MonoBehaviour
     }
 
     // Update is called once per frame
+    //This goes through all the entries in the Ball Manager script and then spawns the ball according to the values
     void Update()
     {
         Debug.Log(audioSource.time);

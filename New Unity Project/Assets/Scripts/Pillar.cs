@@ -6,8 +6,7 @@ public class Pillar : MonoBehaviour
 {
     float startPos; //starting position of pillar
     float startSpeed; //base speed of pillar
-    public float targetPos; //the target position that the pillar wants to move to *NOT IN USE AT THE MOMENT*
-    public float speed; //the speed at which the pillar will move
+    float speed; //the speed at which the pillar will move
 
     bool isIdle; //checks to see if the pillar is idle. if it is waiting, it wont be moved by the script.
 
@@ -20,7 +19,6 @@ public class Pillar : MonoBehaviour
     {
         startPos = transform.position.y;
         startSpeed = 10f;
-        targetPos = startPos;
         speed = startSpeed;
 
         isIdle = true;
@@ -71,6 +69,7 @@ public class Pillar : MonoBehaviour
         isIdle = false;
     }
 
+    //Pillar is set to inactive when it is near the player.
     public void SetActive(bool active)
     {
         if (active)
