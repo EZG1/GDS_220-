@@ -80,7 +80,7 @@ public class BallManager : MonoBehaviour
     //This goes through all the entries in the Ball Manager script and then spawns the ball according to the values
     void Update()
     {
-        Debug.Log(audioSource.time);
+        //Debug.Log(audioSource.time);
 
         for (int i = 0; i < manager.Count; i++)
         {

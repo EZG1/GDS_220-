@@ -7,13 +7,24 @@ using UnityEngine;
 public class SimplePillar : MonoBehaviour
 {
     //during the game, targetPos can be changed and the pillar will move automatically to that position
-    float targetPos;
+    public float targetPos;
     float speed;
 
     //this can be altered in the inspector so we can place initial values in the scene
     //this can then be used to set a new targetPos with the SetPosition function
     public float manualPosition;
-    
+
+    private void OnEnable()
+    {
+        HitBoxTrigger.start += SetPosition;
+    }
+
+    private void OnDisable()
+    {
+        HitBoxTrigger.start -= SetPosition;
+    }
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -41,6 +52,11 @@ public class SimplePillar : MonoBehaviour
             transform.position = new Vector3(transform.position.x, targetPos, transform.position.z);
         }
         
+    }
+
+    public void SetPosition()
+    {
+        targetPos = manualPosition;
     }
 
     public void SetPosition(float position)
