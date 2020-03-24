@@ -22,10 +22,24 @@ public class A_AudioVisualization : MonoBehaviour
     public enum _channel {Stereo, Left, Right};
     public _channel channel = new _channel();
 
+    private void OnEnable()
+    {
+        HitBoxTrigger.start += Play;
+    }
+
+    private void OnDisable()
+    {
+        HitBoxTrigger.start -= Play;
+    }
+
     void Start()
     {
         _audioSource = GetComponent<AudioSource>();
         AudioProfile(_audioProfile);
+    }
+
+    void Play()
+    {
         _audioSource.Play();
     }
 
