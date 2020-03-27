@@ -14,6 +14,8 @@ public class SimplePillar : MonoBehaviour
     //this can then be used to set a new targetPos with the SetPosition function
     public float manualPosition;
 
+    AudioSource audioSource;
+
     private void OnEnable()
     {
         HitBoxTrigger.start += SetPosition;
@@ -29,7 +31,12 @@ public class SimplePillar : MonoBehaviour
     void Start()
     {
         targetPos = transform.position.y;
-        speed = 5f;
+        speed = 1f;
+
+        if (GetComponent<AudioSource>())
+        {
+            audioSource = GetComponent<AudioSource>();
+        }
     }
 
     // Update is called once per frame
@@ -57,6 +64,11 @@ public class SimplePillar : MonoBehaviour
     public void SetPosition()
     {
         targetPos = manualPosition;
+
+        if (audioSource != null)
+        {
+            audioSource.Play();
+        }
     }
 
     public void SetPosition(float position)

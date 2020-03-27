@@ -40,12 +40,22 @@ public class A_AudioVisualization : MonoBehaviour
 
     void Play()
     {
+        StartCoroutine("Delay");
+    }
+
+    IEnumerator Delay()
+    {
+        yield return new WaitForSeconds(5);
         _audioSource.Play();
     }
 
     // Update is called once per frame
     void Update()
     {
+        //for testing purposes
+        Debug.Log(_audioSource.time);
+
+
         GetSpectrumAudioSource();
         MakeFreuquencyBands();
         BandBuffer();
