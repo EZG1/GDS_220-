@@ -36,5 +36,6 @@ public class CapColour : MonoBehaviour
         Debug.Log("Started Coroutine at timestape :" + Time.time);
         GlowIntensity = new Color(1f, 1f, 1f);
         GlowColor = new Color(0.4f, 0.213321f, 0.5643f);
+
         }
 }
