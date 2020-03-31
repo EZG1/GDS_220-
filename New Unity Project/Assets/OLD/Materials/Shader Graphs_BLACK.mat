@@ -22,5 +22,5 @@ Material:
     m_TexEnvs: []
     m_Floats: []
     m_Colors:
-    - Color_F383CE83: {r: 0, g: 0.16522186, b: 0.254717, a: 1}
+    - Color_F383CE83: {r: 0.023529414, g: 0.13725491, b: 0.16862746, a: 1}
     - Vector3_8A595A1C: {r: 0, g: 0, b: 0, a: 0}
