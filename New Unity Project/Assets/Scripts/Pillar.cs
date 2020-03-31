@@ -76,6 +76,10 @@ public class Pillar : MonoBehaviour
         //this will change the colour over time to the target colour
         colourTimer += colourSpeed * Time.deltaTime;
         material.SetColor("Color_78BD9413", Color.Lerp(material.GetColor("Color_78BD9413"), targetColour, colourTimer));
+
+
+        //changes the intensity of the colour based on position
+        material.SetColor("Color_848602D4", Color.Lerp(new Color(0.8f, 0.8f, 0.8f), new Color(1.0f, 1.0f, 1.0f), (transform.position.y - startPos) / 5));
     }
 
     public void Jump(float newSpeed)

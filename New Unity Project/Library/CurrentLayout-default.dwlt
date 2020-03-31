@@ -113,7 +113,7 @@ MonoBehaviour:
   m_MinSize: {x: 581, y: 472}
   m_MaxSize: {x: 14004, y: 14044}
   vertical: 1
-  controlID: 84
+  controlID: 12
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -138,7 +138,7 @@ MonoBehaviour:
   m_MinSize: {x: 581, y: 472}
   m_MaxSize: {x: 14004, y: 14044}
   vertical: 0
-  controlID: 85
+  controlID: 13
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -334,9 +334,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 23.01543, y: 20.140253, z: 14.53913}
+    m_Target: {x: 7.547038, y: 17.800388, z: 14.712517}
     speed: 2
-    m_Value: {x: 23.01543, y: 20.140253, z: 14.53913}
+    m_Value: {x: 7.547038, y: 17.800388, z: 14.712517}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -365,13 +365,13 @@ MonoBehaviour:
       speed: 2
       m_Value: 0
   m_Rotation:
-    m_Target: {x: -0.17451783, y: -0.065826245, z: 0.011688728, w: -0.9824094}
+    m_Target: {x: -0.13638577, y: -0.003867532, z: 0.00053603307, w: -0.99068195}
     speed: 2
-    m_Value: {x: -0.17451309, y: -0.06582446, z: 0.01168841, w: -0.9823827}
+    m_Value: {x: -0.1363812, y: -0.0038674024, z: 0.00053601514, w: -0.99064875}
   m_Size:
-    m_Target: 175.40909
+    m_Target: 65.69799
     speed: 2
-    m_Value: 175.40909
+    m_Value: 65.69799
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -560,10 +560,10 @@ MonoBehaviour:
   m_ViewDataDictionary: {fileID: 0}
   m_SceneHierarchy:
     m_TreeViewState:
-      scrollPos: {x: 0, y: 396}
-      m_SelectedIDs: 4e680000
-      m_LastClickedID: 26702
-      m_ExpandedIDs: 6afbffffc45500003e640000d0690000e06a0000f26a00003c6b0000
+      scrollPos: {x: 0, y: 5568}
+      m_SelectedIDs: 
+      m_LastClickedID: 0
+      m_ExpandedIDs: 6afbffffc45500006c56000002580000e6630000e06a0000266c0000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -652,19 +652,19 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets
+    - Assets/Audio/AudioScripts
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets
+  - Assets/Audio/AudioScripts
   m_LastFoldersGridSize: -1
   m_LastProjectPath: D:\User\Documents\GDS_220-\New Unity Project
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 60}
-    m_SelectedIDs: 4a390000
-    m_LastClickedID: 14666
+    m_SelectedIDs: 923c0000
+    m_LastClickedID: 15506
     m_ExpandedIDs: 000000004a3900004e3a0000be3b0000943d0000b24000003041000042440000f8440000164900001a4b00003650000088500000be50000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
