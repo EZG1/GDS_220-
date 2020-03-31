@@ -79,7 +79,15 @@ public class Pillar : MonoBehaviour
 
 
         //changes the intensity of the colour based on position
-        material.SetColor("Color_848602D4", Color.Lerp(new Color(0.8f, 0.8f, 0.8f), new Color(1.5f, 1.5f, 1.5f), (transform.position.y - startPos) / 5));
+        material.SetColor("Color_848602D4", Color.Lerp(new Color(1.0f, 1.0f, 1.0f), new Color(1.5f, 1.5f, 1.5f), (transform.position.y - startPos) / 2));
+
+        //material.SetColor("_FrenselEffectControl", Color.Lerp(new Color(2.5f, 2.5f, 2.5f), new Color(1.0f, 1.0f, 1.0f), (transform.position.y - startPos) / 5));
+        //material.SetColor("_FrenselEffectControl", Color.Lerp(new Color(2.5f, 2.5f, 2.5f), new Color(1.0f, 1.0f, 1.0f), Mathf.PingPong(Time.time, 1)));
+
+        material.SetFloat("_FrenselEffectControl", Mathf.Lerp(2.0f, 1.0f, (transform.position.y - startPos) / 2));
+
+
+
     }
 
     public void Jump(float newSpeed)
