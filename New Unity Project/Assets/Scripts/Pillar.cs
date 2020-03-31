@@ -79,7 +79,7 @@ public class Pillar : MonoBehaviour
 
 
         //changes the intensity of the colour based on position
-        material.SetColor("Color_848602D4", Color.Lerp(new Color(0.8f, 0.8f, 0.8f), new Color(1.0f, 1.0f, 1.0f), (transform.position.y - startPos) / 5));
+        material.SetColor("Color_848602D4", Color.Lerp(new Color(0.8f, 0.8f, 0.8f), new Color(1.5f, 1.5f, 1.5f), (transform.position.y - startPos) / 5));
     }
 
     public void Jump(float newSpeed)
