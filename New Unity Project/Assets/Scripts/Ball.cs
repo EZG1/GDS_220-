@@ -10,6 +10,9 @@ public class Ball : MonoBehaviour
     public bool canMove;
     public bool canGrow;
 
+    public bool canColourChange;
+    public Color colour;
+
     public Vector3 direction;
     public float scaleSpeed;
 
@@ -50,6 +53,11 @@ public class Ball : MonoBehaviour
         if (other.GetComponent<Pillar>())
         {
             other.GetComponent<Pillar>().Jump(pillarSpeed + speedAlteration);
+        }
+
+        if (canColourChange)
+        {
+            other.GetComponent<Pillar>().ChangeColour(colour);
         }
     }
 

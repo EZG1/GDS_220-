@@ -29,6 +29,16 @@ public struct MovementDetails
 }
 
 [System.Serializable]
+public struct ColourDetails
+{
+    [Tooltip("Enables colour changing")]
+    public bool ColourChange;
+
+    [Tooltip("The colour that it will change to")]
+    public Color Colour;
+}
+
+[System.Serializable]
 public struct BallData
 {
     [Tooltip("The name of this entry")]
@@ -51,6 +61,9 @@ public struct BallData
 
     [Tooltip("Scaling Details")]
     public ScalingDetails Scaling;
+
+    [Tooltip("Colour Details")]
+    public ColourDetails Colouring;
 
     [Tooltip("The speed at which affected pillars will move up")]
     public float PillarSpeed;
@@ -103,12 +116,19 @@ public class BallManager : MonoBehaviour
                     obj.GetComponent<Ball>().scaleSpeed = manager[i].Scaling.GrowSpeed;
                 }
 
+                if (manager[i].Colouring.ColourChange)
+                {
+                    obj.GetComponent<Ball>().canColourChange = true;
+                    obj.GetComponent<Ball>().colour = manager[i].Colouring.Colour;
+                }
+
                 obj.GetComponent<Ball>().pillarSpeed = manager[i].PillarSpeed;
 
                 Destroy(obj, manager[i].DeathTime);
 
                 manager.RemoveAt(i);
                 i--;
+
             }
         }
 

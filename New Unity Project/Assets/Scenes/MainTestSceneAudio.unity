@@ -62256,6 +62256,9 @@ MonoBehaviour:
     Scaling:
       CanGrow: 1
       GrowSpeed: 75
+    Colouring:
+      ColourChange: 1
+      Colour: {r: 0.49056602, g: 0.115699545, b: 0.14365788, a: 0}
     PillarSpeed: 5
     DeathTime: 5
   - Description: Heartbeat2
@@ -62269,6 +62272,9 @@ MonoBehaviour:
     Scaling:
       CanGrow: 1
       GrowSpeed: 75
+    Colouring:
+      ColourChange: 1
+      Colour: {r: 0.08741536, g: 0.3584906, b: 0.04058383, a: 0}
     PillarSpeed: 5
     DeathTime: 5
   - Description: Heartbeat3
@@ -62282,6 +62288,9 @@ MonoBehaviour:
     Scaling:
       CanGrow: 1
       GrowSpeed: 75
+    Colouring:
+      ColourChange: 0
+      Colour: {r: 0, g: 0, b: 0, a: 0}
     PillarSpeed: 5
     DeathTime: 5
   - Description: Reverse1-0
@@ -62295,6 +62304,9 @@ MonoBehaviour:
     Scaling:
       CanGrow: 1
       GrowSpeed: 75
+    Colouring:
+      ColourChange: 0
+      Colour: {r: 0, g: 0, b: 0, a: 0}
     PillarSpeed: 5
     DeathTime: 1
   - Description: Reverse1-2
@@ -62308,6 +62320,9 @@ MonoBehaviour:
     Scaling:
       CanGrow: 1
       GrowSpeed: 75
+    Colouring:
+      ColourChange: 0
+      Colour: {r: 0, g: 0, b: 0, a: 0}
     PillarSpeed: 5
     DeathTime: 1
   - Description: Reverse1-6
@@ -62321,6 +62336,9 @@ MonoBehaviour:
     Scaling:
       CanGrow: 1
       GrowSpeed: 75
+    Colouring:
+      ColourChange: 0
+      Colour: {r: 0, g: 0, b: 0, a: 0}
     PillarSpeed: 5
     DeathTime: 1
   - Description: Reverse1-8
@@ -62334,6 +62352,9 @@ MonoBehaviour:
     Scaling:
       CanGrow: 1
       GrowSpeed: 75
+    Colouring:
+      ColourChange: 0
+      Colour: {r: 0, g: 0, b: 0, a: 0}
     PillarSpeed: 5
     DeathTime: 1
   - Description: Reverse2-0
@@ -62347,6 +62368,9 @@ MonoBehaviour:
     Scaling:
       CanGrow: 1
       GrowSpeed: 75
+    Colouring:
+      ColourChange: 0
+      Colour: {r: 0, g: 0, b: 0, a: 0}
     PillarSpeed: 5
     DeathTime: 1
   - Description: Reverse2-2
@@ -62360,6 +62384,9 @@ MonoBehaviour:
     Scaling:
       CanGrow: 1
       GrowSpeed: 75
+    Colouring:
+      ColourChange: 0
+      Colour: {r: 0, g: 0, b: 0, a: 0}
     PillarSpeed: 5
     DeathTime: 1
   - Description: Reverse2-6
@@ -62373,6 +62400,9 @@ MonoBehaviour:
     Scaling:
       CanGrow: 1
       GrowSpeed: 75
+    Colouring:
+      ColourChange: 0
+      Colour: {r: 0, g: 0, b: 0, a: 0}
     PillarSpeed: 5
     DeathTime: 1
   - Description: Reverse2-8
@@ -62386,6 +62416,9 @@ MonoBehaviour:
     Scaling:
       CanGrow: 1
       GrowSpeed: 75
+    Colouring:
+      ColourChange: 0
+      Colour: {r: 0, g: 0, b: 0, a: 0}
     PillarSpeed: 5
     DeathTime: 1
   - Description: Reverse3-0
@@ -62399,6 +62432,9 @@ MonoBehaviour:
     Scaling:
       CanGrow: 1
       GrowSpeed: 75
+    Colouring:
+      ColourChange: 0
+      Colour: {r: 0, g: 0, b: 0, a: 0}
     PillarSpeed: 5
     DeathTime: 1
   - Description: Reverse3-2
@@ -62412,6 +62448,9 @@ MonoBehaviour:
     Scaling:
       CanGrow: 1
       GrowSpeed: 75
+    Colouring:
+      ColourChange: 0
+      Colour: {r: 0, g: 0, b: 0, a: 0}
     PillarSpeed: 5
     DeathTime: 1
   - Description: Reverse3-6
@@ -62425,6 +62464,9 @@ MonoBehaviour:
     Scaling:
       CanGrow: 1
       GrowSpeed: 75
+    Colouring:
+      ColourChange: 0
+      Colour: {r: 0, g: 0, b: 0, a: 0}
     PillarSpeed: 5
     DeathTime: 1
   - Description: Reverse3-8
@@ -62438,6 +62480,9 @@ MonoBehaviour:
     Scaling:
       CanGrow: 1
       GrowSpeed: 75
+    Colouring:
+      ColourChange: 0
+      Colour: {r: 0, g: 0, b: 0, a: 0}
     PillarSpeed: 5
     DeathTime: 1
   - Description: Beat
@@ -62451,6 +62496,9 @@ MonoBehaviour:
     Scaling:
       CanGrow: 0
       GrowSpeed: 75
+    Colouring:
+      ColourChange: 0
+      Colour: {r: 0, g: 0, b: 0, a: 0}
     PillarSpeed: 20
     DeathTime: 1
   - Description: Shoot1
@@ -62464,6 +62512,9 @@ MonoBehaviour:
     Scaling:
       CanGrow: 0
       GrowSpeed: 75
+    Colouring:
+      ColourChange: 0
+      Colour: {r: 0, g: 0, b: 0, a: 0}
     PillarSpeed: 10
     DeathTime: 5
   - Description: Shoot2
@@ -62477,6 +62528,9 @@ MonoBehaviour:
     Scaling:
       CanGrow: 0
       GrowSpeed: 75
+    Colouring:
+      ColourChange: 0
+      Colour: {r: 0, g: 0, b: 0, a: 0}
     PillarSpeed: 10
     DeathTime: 5
   - Description: Shoot3
@@ -62490,6 +62544,9 @@ MonoBehaviour:
     Scaling:
       CanGrow: 0
       GrowSpeed: 75
+    Colouring:
+      ColourChange: 0
+      Colour: {r: 0, g: 0, b: 0, a: 0}
     PillarSpeed: 10
     DeathTime: 5
   - Description: Reverse
@@ -62503,6 +62560,9 @@ MonoBehaviour:
     Scaling:
       CanGrow: 1
       GrowSpeed: 75
+    Colouring:
+      ColourChange: 0
+      Colour: {r: 0, g: 0, b: 0, a: 0}
     PillarSpeed: 20
     DeathTime: 5
 --- !u!1001 &1575407222

@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Pillar : MonoBehaviour
 {
@@ -12,7 +13,7 @@ public class Pillar : MonoBehaviour
 
     bool isActive;
 
-
+    Material material;
 
     // Start is called before the first frame update
     void Start()
@@ -23,6 +24,8 @@ public class Pillar : MonoBehaviour
 
         isIdle = true;
         isActive = true;
+
+        material = GetComponent<Renderer>().material;
     }
 
     // Update is called once per frame
@@ -82,8 +85,8 @@ public class Pillar : MonoBehaviour
         }
     }
 
-    public void SetPosition(float position)
+    public void ChangeColour(Color colour)
     {
-        startPos = position;
+        material.SetColor("Color_78BD9413", colour);
     }
 }
