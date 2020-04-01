@@ -71730,8 +71730,8 @@ MonoBehaviour:
       CanGrow: 1
       GrowSpeed: 75
     Colouring:
-      ColourChange: 0
-      Colour: {r: 0, g: 0, b: 0, a: 0}
+      ColourChange: 1
+      Colour: {r: 1, g: 0, b: 0.956861, a: 0}
     PillarSpeed: 5
     DeathTime: 1
   - Description: Reverse1-2
@@ -71747,7 +71747,7 @@ MonoBehaviour:
       GrowSpeed: 75
     Colouring:
       ColourChange: 0
-      Colour: {r: 0, g: 0, b: 0, a: 0}
+      Colour: {r: 1, g: 0.42802835, b: 0, a: 0}
     PillarSpeed: 5
     DeathTime: 1
   - Description: Reverse1-6
@@ -71826,8 +71826,8 @@ MonoBehaviour:
       CanGrow: 1
       GrowSpeed: 75
     Colouring:
-      ColourChange: 0
-      Colour: {r: 0, g: 0, b: 0, a: 0}
+      ColourChange: 1
+      Colour: {r: 1, g: 0, b: 0, a: 0}
     PillarSpeed: 5
     DeathTime: 1
   - Description: Reverse2-8
@@ -71858,8 +71858,8 @@ MonoBehaviour:
       CanGrow: 1
       GrowSpeed: 75
     Colouring:
-      ColourChange: 0
-      Colour: {r: 0, g: 0, b: 0, a: 0}
+      ColourChange: 1
+      Colour: {r: 0, g: 1, b: 0.092865944, a: 0}
     PillarSpeed: 5
     DeathTime: 1
   - Description: Reverse3-2
@@ -71990,6 +71990,22 @@ MonoBehaviour:
       Colour: {r: 0, g: 0, b: 0, a: 0}
     PillarSpeed: 20
     DeathTime: 5
+  - Description: Heartbeat4
+    SpawnIndex: 4
+    SpawnCue: 23
+    InitialScale: 5
+    Movement:
+      CanMove: 0
+      BallSpeed: 50
+      Direction: {x: 0, y: 0, z: 1}
+    Scaling:
+      CanGrow: 1
+      GrowSpeed: 60
+    Colouring:
+      ColourChange: 1
+      Colour: {r: 0, g: 1, b: 0.7569511, a: 0}
+    PillarSpeed: 20
+    DeathTime: 7
 --- !u!1001 &1575407222
 PrefabInstance:
   m_ObjectHideFlags: 0

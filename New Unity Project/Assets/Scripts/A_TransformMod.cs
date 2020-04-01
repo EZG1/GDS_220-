@@ -9,7 +9,7 @@ public class A_TransformMod : MonoBehaviour
     private bool _useBuffer = true;
     float startPos;
 
-    float fallSpeed = 0.0005f;
+    float fallSpeed = 0f;
 
     // Start is called before the first frame update
     void Start()
@@ -23,7 +23,7 @@ public class A_TransformMod : MonoBehaviour
         if (_useBuffer && transform.position.y < startPos + (A_AudioVisualization._audioBandBuffer[_band] * _scaleMultiplier) + _startScale)
         {
             transform.position = new Vector3(transform.position.x, startPos + (A_AudioVisualization._audioBandBuffer[_band] * _scaleMultiplier) + _startScale, transform.position.z);
-            fallSpeed = 0.0005f;
+            fallSpeed = 0f;
         }
         if (transform.position.y > startPos)
         {
