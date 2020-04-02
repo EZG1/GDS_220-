@@ -15,6 +15,10 @@ public class Pillar : MonoBehaviour
 
     Material material;
 
+    float colourTimer;
+    float colourSpeed;
+    Color targetColour;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -26,6 +30,10 @@ public class Pillar : MonoBehaviour
         isActive = true;
 
         material = GetComponent<Renderer>().material;
+        material.SetColor("Color_78BD9413", new Color(0.4f, 0.213321f, 0.5643f));
+        targetColour = new Color(0.4f, 0.213321f, 0.5643f);
+
+        colourSpeed = 0.1f;
     }
 
     // Update is called once per frame
@@ -64,6 +72,22 @@ public class Pillar : MonoBehaviour
             transform.position = new Vector3(transform.position.x, startPos, transform.position.z);
             isIdle = true;
         }
+
+        //this will change the colour over time to the target colour
+        colourTimer += colourSpeed * Time.deltaTime;
+        material.SetColor("Color_78BD9413", Color.Lerp(material.GetColor("Color_78BD9413"), targetColour, colourTimer));
+
+
+        //changes the intensity of the colour based on position
+        material.SetColor("Color_848602D4", Color.Lerp(new Color(1.0f, 1.0f, 1.0f), new Color(1.5f, 1.5f, 1.5f), (transform.position.y - startPos) / 2));
+
+        //material.SetColor("_FrenselEffectControl", Color.Lerp(new Color(2.5f, 2.5f, 2.5f), new Color(1.0f, 1.0f, 1.0f), (transform.position.y - startPos) / 5));
+        //material.SetColor("_FrenselEffectControl", Color.Lerp(new Color(2.5f, 2.5f, 2.5f), new Color(1.0f, 1.0f, 1.0f), Mathf.PingPong(Time.time, 1)));
+
+        material.SetFloat("_FrenselEffectControl", Mathf.Lerp(2.0f, 1.0f, (transform.position.y - startPos) / 2));
+
+
+
     }
 
     public void Jump(float newSpeed)
@@ -87,6 +111,7 @@ public class Pillar : MonoBehaviour
 
     public void ChangeColour(Color colour)
     {
-        material.SetColor("Color_78BD9413", colour);
+        targetColour = colour;
+        colourTimer = 0;
     }
 }

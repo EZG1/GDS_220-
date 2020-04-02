@@ -62481,8 +62481,8 @@ MonoBehaviour:
       CanGrow: 1
       GrowSpeed: 75
     Colouring:
-      ColourChange: 0
-      Colour: {r: 0, g: 0, b: 0, a: 0}
+      ColourChange: 1
+      Colour: {r: 0.2772339, g: 0.33043987, b: 0.8396226, a: 0}
     PillarSpeed: 5
     DeathTime: 5
   - Description: Reverse1-0
