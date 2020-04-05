@@ -5,6 +5,9 @@ using UnityEngine;
 public class A_AudioVisualization : MonoBehaviour
 {
     AudioSource _audioSource;
+
+    public List<AudioClip> _audioClips;
+
     public static float[] _samplesLeft = new float[512];     
     public static float[] _samplesRight = new float[512]; 
     float[] _freqBand = new float[8];
@@ -35,17 +38,22 @@ public class A_AudioVisualization : MonoBehaviour
     void Start()
     {
         _audioSource = GetComponent<AudioSource>();
+
+        int tempIndex = Random.Range(0, _audioClips.Count);
+        _audioSource.clip = _audioClips[tempIndex];
+
         AudioProfile(_audioProfile);
     }
 
     void Play()
     {
         StartCoroutine("Delay");
+        _audioSource.time = 70; //for testing purposes
     }
 
     IEnumerator Delay()
     {
-        yield return new WaitForSeconds(5);
+        yield return new WaitForSeconds(1);
         _audioSource.Play();
     }
 

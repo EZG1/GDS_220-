@@ -78,7 +78,6 @@ public class BallManager : MonoBehaviour
 
     public List<Transform> spawners = new List<Transform>();
 
-    [Tooltip("Increase size to add entries to control ball spawning & pillar movement")]
     public List<BallData> manager = new List<BallData>();
 
     AudioSource audioSource;
@@ -97,7 +96,7 @@ public class BallManager : MonoBehaviour
 
         for (int i = 0; i < manager.Count; i++)
         {
-            if (manager[i].SpawnCue <= audioSource.time)
+            if (manager[i].SpawnCue - audioSource.time < 0 && manager[i].SpawnCue - audioSource.time > -1) //manager[i].SpawnCue <= audioSource.time
             {
                 GameObject obj = Instantiate(ballPrefab, spawners[manager[i].SpawnIndex].position, Quaternion.identity);
 

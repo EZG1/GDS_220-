@@ -11,7 +11,7 @@ public class Pillar : MonoBehaviour
 
     bool isIdle; //checks to see if the pillar is idle. if it is waiting, it wont be moved by the script.
 
-    bool isActive;
+    public bool isActive;
 
     Material material;
 
@@ -27,11 +27,11 @@ public class Pillar : MonoBehaviour
         speed = startSpeed;
 
         isIdle = true;
-        isActive = true;
+        isActive = true; //NOTE
 
         material = GetComponent<Renderer>().material;
-        material.SetColor("Color_78BD9413", new Color(0.4f, 0.213321f, 0.5643f));
-        targetColour = new Color(0.4f, 0.213321f, 0.5643f);
+        material.SetColor("Color_78BD9413", new Color(0.2f, 0.2f, 0.2f));
+        targetColour = new Color(0.2f, 0.2f, 0.2f);
 
         colourSpeed = 0.1f;
     }
@@ -40,7 +40,7 @@ public class Pillar : MonoBehaviour
     void Update()
     {
         //if the pillar isn't currently idle, then move the pillar up
-        if (!isIdle && isActive)
+        if (!isIdle)
         {
             transform.position = new Vector3(transform.position.x, transform.position.y + speed * Time.deltaTime, transform.position.z);
             if (speed > -4f)
@@ -48,21 +48,6 @@ public class Pillar : MonoBehaviour
                 speed -= 0.2f; //lowers the speed over time to act like gravity
             }
         }
-
-        //if the pillar is deactivated and is in the air, it will quickly fall down
-        if (!isActive && transform.position.y > startPos)
-        {
-            speed = -30f;
-            transform.position = new Vector3(transform.position.x, transform.position.y + speed * Time.deltaTime, transform.position.z);
-        }
-
-        //if the pillar is currently idle but the start(landing/rest) position has been changed to be lower, then it will slowly move down to new position
-        if (isIdle && transform.position.y > startPos)
-        {
-            speed = -5f;
-            transform.position = new Vector3(transform.position.x, transform.position.y + speed * Time.deltaTime, transform.position.z);
-        }
-
 
         //if the pillar goes below its starting position, it is reset and set to idle so it will no longer be moved until prompted
         //so currently pillars won't be able to go lower than their starting position
@@ -81,9 +66,7 @@ public class Pillar : MonoBehaviour
         //changes the intensity of the colour based on position
         material.SetColor("Color_848602D4", Color.Lerp(new Color(1.0f, 1.0f, 1.0f), new Color(1.5f, 1.5f, 1.5f), (transform.position.y - startPos) / 2));
 
-        //material.SetColor("_FrenselEffectControl", Color.Lerp(new Color(2.5f, 2.5f, 2.5f), new Color(1.0f, 1.0f, 1.0f), (transform.position.y - startPos) / 5));
-        //material.SetColor("_FrenselEffectControl", Color.Lerp(new Color(2.5f, 2.5f, 2.5f), new Color(1.0f, 1.0f, 1.0f), Mathf.PingPong(Time.time, 1)));
-
+        //changes the frensel effect to give it more or less of a glow based on position
         material.SetFloat("_FrenselEffectControl", Mathf.Lerp(2.0f, 1.0f, (transform.position.y - startPos) / 2));
 
 

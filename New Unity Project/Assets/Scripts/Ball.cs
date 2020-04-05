@@ -53,6 +53,11 @@ public class Ball : MonoBehaviour
         if (other.GetComponent<Pillar>())
         {
             other.GetComponent<Pillar>().Jump(pillarSpeed + speedAlteration);
+
+            if (other.GetComponent<Pillar>().isActive == false)
+            {
+                other.GetComponent<Pillar>().SetActive(true);
+            }
         }
 
         if (canColourChange)
