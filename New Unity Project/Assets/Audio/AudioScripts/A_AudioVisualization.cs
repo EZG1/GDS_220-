@@ -48,7 +48,7 @@ public class A_AudioVisualization : MonoBehaviour
     void Play()
     {
         StartCoroutine("Delay");
-        _audioSource.time = 70; //for testing purposes
+        //_audioSource.time = 70; //for testing purposes
     }
 
     IEnumerator Delay()
