@@ -7,8 +7,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Shader Graphs_Flat
-  m_Shader: {fileID: -6465566751694194690, guid: e469ad05ddec2cb4281f1e8e051b9794,
+  m_Name: Rain
+  m_Shader: {fileID: -6465566751694194690, guid: 1b9b860c4c2ef5943a7c39cca3954a36,
     type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
@@ -20,9 +20,5 @@ Material:
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs: []
-    m_Floats:
-    - _FrenselEffectControl: 2.5
-    m_Colors:
-    - Color_736EF487: {r: 0.29810432, g: 0.4361156, b: 0.7264151, a: 1}
-    - Color_78BD9413: {r: 0.5660378, g: 0.5660378, b: 0.5660378, a: 1}
-    - Color_848602D4: {r: 1, g: 1, b: 1, a: 1}
+    m_Floats: []
+    m_Colors: []
