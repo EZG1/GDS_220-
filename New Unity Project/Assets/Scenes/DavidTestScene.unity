@@ -1296,6 +1296,7 @@ MonoBehaviour:
   _audioClips:
   - {fileID: 8300000, guid: 573ae3d231038dc45abeb84b18ae6cdb, type: 3}
   channel: 0
+  startTime: 0
 --- !u!82 &22240853
 AudioSource:
   m_ObjectHideFlags: 0
@@ -72970,7 +72971,7 @@ MonoBehaviour:
   - Description: Fire 1-1
     SpawnIndex: 8
     SpawnCue: 77
-    InitialScale: 15
+    InitialScale: 5
     Movement:
       CanMove: 0
       BallSpeed: 100
@@ -72981,12 +72982,12 @@ MonoBehaviour:
     Colouring:
       ColourChange: 1
       Colour: {r: 0.745283, g: 0, b: 0.072398804, a: 0}
-    PillarSpeed: 5
-    DeathTime: 5
+    PillarSpeed: 0
+    DeathTime: 5.2
   - Description: 1-2
     SpawnIndex: 2
     SpawnCue: 77
-    InitialScale: 15
+    InitialScale: 5
     Movement:
       CanMove: 0
       BallSpeed: 100
@@ -72997,12 +72998,12 @@ MonoBehaviour:
     Colouring:
       ColourChange: 1
       Colour: {r: 0.745283, g: 0, b: 0.072398804, a: 0}
-    PillarSpeed: 5
-    DeathTime: 5
+    PillarSpeed: 0
+    DeathTime: 5.2
   - Description: 1-3
     SpawnIndex: 6
     SpawnCue: 77
-    InitialScale: 15
+    InitialScale: 5
     Movement:
       CanMove: 0
       BallSpeed: 100
@@ -73013,12 +73014,12 @@ MonoBehaviour:
     Colouring:
       ColourChange: 1
       Colour: {r: 0.745283, g: 0, b: 0.072398804, a: 0}
-    PillarSpeed: 5
-    DeathTime: 5
+    PillarSpeed: 0
+    DeathTime: 5.2
   - Description: 1-4
     SpawnIndex: 0
     SpawnCue: 77
-    InitialScale: 15
+    InitialScale: 5
     Movement:
       CanMove: 0
       BallSpeed: 100
@@ -73029,6 +73030,166 @@ MonoBehaviour:
     Colouring:
       ColourChange: 1
       Colour: {r: 0.745283, g: 0, b: 0.072398804, a: 0}
+    PillarSpeed: 0
+    DeathTime: 5.2
+  - Description: CLIMAX 1-1
+    SpawnIndex: 4
+    SpawnCue: 86.5
+    InitialScale: 150
+    Movement:
+      CanMove: 0
+      BallSpeed: 100
+      Direction: {x: -1, y: 0, z: 0}
+    Scaling:
+      CanGrow: 0
+      GrowSpeed: 20
+    Colouring:
+      ColourChange: 0
+      Colour: {r: 0.745283, g: 0, b: 0.072398804, a: 0}
+    PillarSpeed: 10
+    DeathTime: 0.5
+  - Description: 1-2
+    SpawnIndex: 4
+    SpawnCue: 88.8
+    InitialScale: 150
+    Movement:
+      CanMove: 0
+      BallSpeed: 100
+      Direction: {x: -1, y: 0, z: 0}
+    Scaling:
+      CanGrow: 0
+      GrowSpeed: 20
+    Colouring:
+      ColourChange: 1
+      Colour: {r: 0.74509805, g: 0.15284473, b: 0, a: 0}
+    PillarSpeed: 10
+    DeathTime: 0.5
+  - Description: 1-3
+    SpawnIndex: 4
+    SpawnCue: 91.2
+    InitialScale: 150
+    Movement:
+      CanMove: 0
+      BallSpeed: 100
+      Direction: {x: -1, y: 0, z: 0}
+    Scaling:
+      CanGrow: 0
+      GrowSpeed: 20
+    Colouring:
+      ColourChange: 1
+      Colour: {r: 0.8584906, g: 0.40895346, b: 0.089088656, a: 0}
+    PillarSpeed: 10
+    DeathTime: 0.5
+  - Description: 1-4
+    SpawnIndex: 4
+    SpawnCue: 92.5
+    InitialScale: 150
+    Movement:
+      CanMove: 0
+      BallSpeed: 100
+      Direction: {x: -1, y: 0, z: 0}
+    Scaling:
+      CanGrow: 0
+      GrowSpeed: 20
+    Colouring:
+      ColourChange: 1
+      Colour: {r: 0.8490566, g: 0.6234118, b: 0.32840872, a: 0}
+    PillarSpeed: 15
+    DeathTime: 0.5
+  - Description: 1-5
+    SpawnIndex: 4
+    SpawnCue: 93.6
+    InitialScale: 150
+    Movement:
+      CanMove: 0
+      BallSpeed: 100
+      Direction: {x: -1, y: 0, z: 0}
+    Scaling:
+      CanGrow: 0
+      GrowSpeed: 20
+    Colouring:
+      ColourChange: 1
+      Colour: {r: 0.8650891, g: 0.8773585, b: 0.3559096, a: 0}
+    PillarSpeed: 20
+    DeathTime: 0.5
+  - Description: 1-6
+    SpawnIndex: 4
+    SpawnCue: 94.9
+    InitialScale: 150
+    Movement:
+      CanMove: 0
+      BallSpeed: 100
+      Direction: {x: -1, y: 0, z: 0}
+    Scaling:
+      CanGrow: 0
+      GrowSpeed: 20
+    Colouring:
+      ColourChange: 1
+      Colour: {r: 0.8514861, g: 0.8584906, b: 0.66411537, a: 0}
+    PillarSpeed: 20
+    DeathTime: 0.5
+  - Description: 1-7
+    SpawnIndex: 4
+    SpawnCue: 95.5
+    InitialScale: 150
+    Movement:
+      CanMove: 0
+      BallSpeed: 100
+      Direction: {x: -1, y: 0, z: 0}
+    Scaling:
+      CanGrow: 0
+      GrowSpeed: 20
+    Colouring:
+      ColourChange: 1
+      Colour: {r: 1, g: 1, b: 1, a: 0}
+    PillarSpeed: 20
+    DeathTime: 0.5
+  - Description: DROP
+    SpawnIndex: 4
+    SpawnCue: 95.8
+    InitialScale: 150
+    Movement:
+      CanMove: 0
+      BallSpeed: 100
+      Direction: {x: -1, y: 0, z: 0}
+    Scaling:
+      CanGrow: 0
+      GrowSpeed: 20
+    Colouring:
+      ColourChange: 1
+      Colour: {r: 0, g: 0, b: 0, a: 0}
+    PillarSpeed: 0
+    DeathTime: 0.5
+  - Description: OUTRO - 1-1
+    SpawnIndex: 4
+    SpawnCue: 98.5
+    InitialScale: 5
+    Movement:
+      CanMove: 0
+      BallSpeed: 100
+      Direction: {x: -1, y: 0, z: 0}
+    Scaling:
+      CanGrow: 1
+      GrowSpeed: 100
+    Colouring:
+      ColourChange: 1
+      Colour: {r: 1, g: 1, b: 1, a: 0}
+    PillarSpeed: 5
+    DeathTime: 5
+  - Description: 1-2
+    SpawnIndex: 4
+    SpawnCue: 98.8
+    InitialScale: 5
+    Movement:
+      CanMove: 0
+      BallSpeed: 100
+      Direction: {x: -1, y: 0, z: 0}
+    Scaling:
+      CanGrow: 1
+      GrowSpeed: 100
+    Colouring:
+      ColourChange: 1
+      Colour: {r: 0, g: 0, b: 0, a: 0}
     PillarSpeed: 5
     DeathTime: 5
 --- !u!1001 &1575407222

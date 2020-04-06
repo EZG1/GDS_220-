@@ -25,6 +25,8 @@ public class A_AudioVisualization : MonoBehaviour
     public enum _channel {Stereo, Left, Right};
     public _channel channel = new _channel();
 
+    public float startTime; //for testing purposes
+
     private void OnEnable()
     {
         HitBoxTrigger.start += Play;
@@ -39,7 +41,7 @@ public class A_AudioVisualization : MonoBehaviour
     {
         _audioSource = GetComponent<AudioSource>();
 
-        int tempIndex = Random.Range(0, _audioClips.Count);
+        int tempIndex = Random.Range(0, _audioClips.Count); //this is in case we have more than 1 song added so it will randomly pick one to play
         _audioSource.clip = _audioClips[tempIndex];
 
         AudioProfile(_audioProfile);
@@ -48,7 +50,7 @@ public class A_AudioVisualization : MonoBehaviour
     void Play()
     {
         StartCoroutine("Delay");
-        //_audioSource.time = 70; //for testing purposes
+        _audioSource.time = startTime; //for testing purposes
     }
 
     IEnumerator Delay()
