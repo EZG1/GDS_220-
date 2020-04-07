@@ -40,13 +40,20 @@ public class Pillar : MonoBehaviour
     void Update()
     {
         //if the pillar isn't currently idle, then move the pillar up
-        if (!isIdle)
+        if (!isIdle && isActive)
         {
             transform.position = new Vector3(transform.position.x, transform.position.y + speed * Time.deltaTime, transform.position.z);
             if (speed > -4f)
             {
                 speed -= 0.2f; //lowers the speed over time to act like gravity
             }
+        }
+
+        //pushes the pillar down if it's inactive/around the player
+        if (!isActive && !isIdle)
+        {
+            speed = -30;
+            transform.position = new Vector3(transform.position.x, transform.position.y + speed * Time.deltaTime, transform.position.z);
         }
 
         //if the pillar goes below its starting position, it is reset and set to idle so it will no longer be moved until prompted

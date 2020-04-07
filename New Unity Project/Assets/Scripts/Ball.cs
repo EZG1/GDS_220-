@@ -52,12 +52,7 @@ public class Ball : MonoBehaviour
     {
         if (other.GetComponent<Pillar>())
         {
-            other.GetComponent<Pillar>().Jump(pillarSpeed + speedAlteration);
-
-            if (other.GetComponent<Pillar>().isActive == false)
-            {
-                other.GetComponent<Pillar>().SetActive(true);
-            }
+            other.GetComponent<Pillar>().Jump(pillarSpeed); // + speedAlteration  /removed speedAlteration for now as it made movement inconsistent
         }
 
         if (canColourChange)
