@@ -36,6 +36,15 @@ public struct ColourDetails
 
     [Tooltip("The colour that it will change to")]
     public Color Colour;
+
+    [Tooltip("Enables colour gradient")]
+    public bool Gradient;
+
+    [Tooltip("The colour that the ball will gradually turn into")]
+    public Color SecondColour;
+
+    [Tooltip("The speed at which the colour will change. A small number below 1 is optimal.")]
+    public float GradientSpeed;
 }
 
 [System.Serializable]
@@ -119,6 +128,13 @@ public class BallManager : MonoBehaviour
                 {
                     obj.GetComponent<Ball>().canColourChange = true;
                     obj.GetComponent<Ball>().colour = manager[i].Colouring.Colour;
+
+                    if (manager[i].Colouring.Gradient)
+                    {
+                        obj.GetComponent<Ball>().isGradient = true;
+                        obj.GetComponent<Ball>().secondColour = manager[i].Colouring.SecondColour;
+                        obj.GetComponent<Ball>().gradientSpeed = manager[i].Colouring.GradientSpeed;
+                    }
                 }
 
                 obj.GetComponent<Ball>().pillarSpeed = manager[i].PillarSpeed;

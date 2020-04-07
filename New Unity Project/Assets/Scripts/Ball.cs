@@ -13,6 +13,11 @@ public class Ball : MonoBehaviour
     public bool canColourChange;
     public Color colour;
 
+    public bool isGradient;
+    public Color secondColour;
+    public float gradientSpeed;
+    float gradientValue;
+
     public Vector3 direction;
     public float scaleSpeed;
 
@@ -21,7 +26,6 @@ public class Ball : MonoBehaviour
     private int speedAlteration = 1;
     private bool speedAlterationMovingUp = true;
 
-    // Start is called before the first frame update
     void Awake()
     {
         speedAlteration = Random.Range(1, 10);
@@ -31,6 +35,11 @@ public class Ball : MonoBehaviour
         }
         
         InvokeRepeating("Variation", 1.0f, 0.07f);
+    }
+
+    private void Start()
+    {
+        gradientValue = 0;
     }
 
     // Update is called once per frame
@@ -44,6 +53,11 @@ public class Ball : MonoBehaviour
         if (canGrow)
         {
             transform.localScale += new Vector3(scaleSpeed, scaleSpeed, scaleSpeed) * Time.deltaTime;
+        }
+
+        if (isGradient)
+        {
+            colour = Color.Lerp(colour, secondColour, gradientValue += Time.deltaTime * gradientSpeed);
         }
     }
 
