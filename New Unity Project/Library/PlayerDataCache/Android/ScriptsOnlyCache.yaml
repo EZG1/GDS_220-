@@ -3,16 +3,18 @@ ScriptsOnlyBuild:
     Assembly-CSharp-firstpass.dll:
     - UnityStandardAssets.Characters.FirstPerson.FirstPersonController
     Assembly-CSharp.dll:
+    - A_AudioVisualization
+    - A_TransformMod
     - Ball
-    - BallSpawner
+    - BallManager
     - ForceField
-    - Movement
+    - HitBoxTrigger
     - ONSPSettings
     - Oculus.Platform.PlatformSettings
     - OvrAvatarSettings
     - Pillar
-    - PillarTrigger
     - SimplePillar
+    - Wave
     Oculus.VR.Editor.dll:
     - Assets.Oculus.VR.Editor.OVRPlatformToolSettings
     - OVRConfig
@@ -27,6 +29,14 @@ ScriptsOnlyBuild:
     Unity.RenderPipelines.Lightweight.Runtime.dll:
     - UnityEngine.Rendering.LWRP.ForwardRendererData
     - UnityEngine.Rendering.LWRP.LightweightRenderPipelineAsset
+    Unity.ShaderGraph.Editor.dll:
+    - UnityEditor.ShaderGraph.Drawing.MaterialGraphEditWindow
+    UnityEditor.Graphs.dll:
+    - UnityEditor.Graphs.AnimationBlendTree.Graph
+    - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.Graph
+    - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
+    - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
     - UnityEditor.TestTools.TestRunner.TestListCacheData
@@ -35,7 +45,7 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.GraphicRaycaster
     - UnityEngine.UI.Text
   sceneClasses:
-    Assets/Scenes/MainTestScene.unity:
+    Assets/Scenes/DavidTestScene.unity:
     - Class: 1
       Script: {instanceID: 0}
     - Class: 4
@@ -60,11 +70,17 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 65
       Script: {instanceID: 0}
+    - Class: 74
+      Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
     - Class: 82
       Script: {instanceID: 0}
     - Class: 83
+      Script: {instanceID: 0}
+    - Class: 91
+      Script: {instanceID: 0}
+    - Class: 95
       Script: {instanceID: 0}
     - Class: 104
       Script: {instanceID: 0}
@@ -73,51 +89,55 @@ ScriptsOnlyBuild:
     - Class: 109
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 10026}
+      Script: {instanceID: 10042}
     - Class: 114
-      Script: {instanceID: 10126}
+      Script: {instanceID: 10142}
     - Class: 114
-      Script: {instanceID: 10230}
+      Script: {instanceID: 10246}
     - Class: 114
-      Script: {instanceID: 10382}
+      Script: {instanceID: 10398}
     - Class: 114
-      Script: {instanceID: 10414}
+      Script: {instanceID: 10430}
     - Class: 114
-      Script: {instanceID: 10712}
+      Script: {instanceID: 10648}
     - Class: 114
-      Script: {instanceID: 10806}
+      Script: {instanceID: 10730}
     - Class: 114
-      Script: {instanceID: 11070}
+      Script: {instanceID: 10824}
     - Class: 114
-      Script: {instanceID: 11228}
+      Script: {instanceID: 10858}
     - Class: 114
-      Script: {instanceID: 11296}
+      Script: {instanceID: 11090}
     - Class: 114
-      Script: {instanceID: 11572}
+      Script: {instanceID: 11246}
     - Class: 114
-      Script: {instanceID: 11594}
+      Script: {instanceID: 11250}
     - Class: 114
-      Script: {instanceID: 11842}
+      Script: {instanceID: 11318}
     - Class: 114
-      Script: {instanceID: 12022}
+      Script: {instanceID: 11592}
     - Class: 114
-      Script: {instanceID: 12026}
+      Script: {instanceID: 11862}
     - Class: 114
-      Script: {instanceID: 12120}
+      Script: {instanceID: 12044}
     - Class: 114
-      Script: {instanceID: 12662}
+      Script: {instanceID: 12260}
     - Class: 114
-      Script: {instanceID: 12692}
+      Script: {instanceID: 12684}
     - Class: 114
-      Script: {instanceID: 12822}
+      Script: {instanceID: 12714}
     - Class: 114
-      Script: {instanceID: 13320}
+      Script: {instanceID: 12844}
     - Class: 114
-      Script: {instanceID: 13376}
+      Script: {instanceID: 12872}
+    - Class: 114
+      Script: {instanceID: 13346}
     - Class: 114
       Script: {instanceID: 13402}
     - Class: 114
-      Script: {instanceID: 13512}
+      Script: {instanceID: 13428}
+    - Class: 114
+      Script: {instanceID: 13538}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 124
@@ -459,6 +479,12 @@ ScriptsOnlyBuild:
     className: BoardPosition
   - hash:
       serializedVersion: 2
+      Hash: caae83d5fbc18d16d060df76d9ad5dbf
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: A_AudioVisualization
+  - hash:
+      serializedVersion: 2
       Hash: 7ab0e790220bdca831fdd886b339039d
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -531,7 +557,7 @@ ScriptsOnlyBuild:
     className: OvrAvatarSDKManager
   - hash:
       serializedVersion: 2
-      Hash: 6a169c4385918dac8b2d4f0f02e86756
+      Hash: da0c4c7e6d099f62d297bb2913094682
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: SimplePillar
@@ -541,6 +567,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Postprocessing.Runtime.dll
     namespaceName: UnityEngine.Rendering.PostProcessing
     className: Vignette
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Wave
   - hash:
       serializedVersion: 2
       Hash: e540a01426f9ad59088593bf72bcd255
@@ -639,7 +671,7 @@ ScriptsOnlyBuild:
     className: AnimationPlayableAsset
   - hash:
       serializedVersion: 2
-      Hash: ba2c28f8b0663dab0d850090713f5efe
+      Hash: 0d7d35aaa4958f7930711c0d987cbf96
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Pillar
@@ -709,6 +741,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: Shadow
+  - hash:
+      serializedVersion: 2
+      Hash: ac72847f45523345ef36a1977e3baef8
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: BallManager
   - hash:
       serializedVersion: 2
       Hash: 1b67d4bb4648cb7d784398ebb0539b1b
@@ -849,12 +887,6 @@ ScriptsOnlyBuild:
     className: ControlTrack
   - hash:
       serializedVersion: 2
-      Hash: 775d7ad1485c4e83c5057b8cd5777bf6
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: RotateGameObject
-  - hash:
-      serializedVersion: 2
       Hash: 8dc90e648ac06f43bdd31ac9fa8f4579
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -913,12 +945,6 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: OculusSampleFramework
     className: InteractableRegistry
-  - hash:
-      serializedVersion: 2
-      Hash: 13ec74429518391b660c2b4d290ebad7
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: BallSpawner
   - hash:
       serializedVersion: 2
       Hash: f41dc612e461acf568bc5ca2f9d3c8ea
@@ -985,6 +1011,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp-firstpass.dll
     namespaceName: UnityStandardAssets.Utility
     className: ActivateTrigger
+  - hash:
+      serializedVersion: 2
+      Hash: 342933e5a6f8c671c89343d76ec23386
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: MaterialVariants
   - hash:
       serializedVersion: 2
       Hash: 2d75dd1753213123772f51e8448cd92e
@@ -1093,12 +1125,6 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: Oculus.Platform.Samples.VrHoops
     className: P2PNetworkBall
-  - hash:
-      serializedVersion: 2
-      Hash: 25a62e92b146b20a86eb425d459690b2
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: PillarTrigger
   - hash:
       serializedVersion: 2
       Hash: 22dc216204f0e65ce2161bd7b6ecf06b
@@ -1261,6 +1287,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: OVRLipSyncContextMorphTarget
+  - hash:
+      serializedVersion: 2
+      Hash: bd1f010b5fd660b89955c898de9ba424
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: A_TransformMod
   - hash:
       serializedVersion: 2
       Hash: 157538f8f4891e8727c599fd613d7108
@@ -1473,6 +1505,12 @@ ScriptsOnlyBuild:
     className: EyeCamera
   - hash:
       serializedVersion: 2
+      Hash: 209ffe92d92225792c220331da97594b
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: CapColour
+  - hash:
+      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
@@ -1632,6 +1670,12 @@ ScriptsOnlyBuild:
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
+    className: HitBoxTrigger
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
     className: OvrAvatarSettingsEditor
   - hash:
       serializedVersion: 2
@@ -1755,6 +1799,12 @@ ScriptsOnlyBuild:
     className: MatchController
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: testfall
+  - hash:
+      serializedVersion: 2
       Hash: 4ca6f90afe62fc92d15b7d34228515d1
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
@@ -1803,7 +1853,7 @@ ScriptsOnlyBuild:
     className: BeforeAfterTestCommandState
   - hash:
       serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+      Hash: 855bb9883ca0447a2a95bd34b6e5eceb
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Ball
@@ -2157,5 +2207,5 @@ ScriptsOnlyBuild:
     className: AutoMobileShaderSwitch
   platform: 13
   scenePathNames:
-  - Assets/Scenes/MainTestScene.unity
-  playerPath: C:/Users/keyre/Desktop/GDS_220-/New Unity Project/Assets/../Temp/OVRGradleTempExport
+  - Assets/Scenes/DavidTestScene.unity
+  playerPath: C:/Users/Karl/Desktop/GDS_220-/New Unity Project/Build.apk
