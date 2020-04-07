@@ -8,6 +8,8 @@ public class A_AudioVisualization : MonoBehaviour
 
     public List<AudioClip> _audioClips;
 
+    public int whatTimeToStart;
+
     public static float[] _samplesLeft = new float[512];     
     public static float[] _samplesRight = new float[512]; 
     float[] _freqBand = new float[8];
@@ -55,7 +57,7 @@ public class A_AudioVisualization : MonoBehaviour
 
     IEnumerator Delay()
     {
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(whatTimeToStart);
         _audioSource.Play();
     }
 
