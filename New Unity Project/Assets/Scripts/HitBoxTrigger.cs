@@ -10,7 +10,7 @@ public class HitBoxTrigger : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
+        start();
     }
 
     // Update is called once per frame
@@ -19,6 +19,7 @@ public class HitBoxTrigger : MonoBehaviour
         
     }
 
+    //removed do to movement change
     private void OnTriggerEnter(Collider other)
     {
         if (other.tag == "Player")
