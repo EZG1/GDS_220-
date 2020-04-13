@@ -91,10 +91,10 @@ Material:
     - Color_5C9CD67D: {r: 0.1569064, g: 0.3249125, b: 0.4056604, a: 0}
     - Color_B55815D6: {r: 0.27100393, g: 0.53422034, b: 0.6603774, a: 0}
     - Vector2_943B9C2C: {r: 0.1, g: 0.5, b: 0, a: 0}
-    - Vector2_968AF6EE: {r: 3, g: 1.5, b: 0, a: 0}
+    - Vector2_968AF6EE: {r: 4, g: 2, b: 0, a: 0}
     - Vector2_B414796C: {r: 0.5, g: 0, b: 0, a: 0}
     - Vector3_C566C5BD: {r: 0, g: 0, b: 1, a: 0}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _NormalScrollSpeed: {r: 0.4, g: 0.4, b: 0, a: 0}
+    - _NormalScrollSpeed: {r: 0.2, g: 0.2, b: 0, a: 0}
     - _WaveScrollSpeed: {r: 0.05, g: 0.05, b: 0, a: 0}
