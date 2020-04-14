@@ -65,7 +65,7 @@ public class A_AudioVisualization : MonoBehaviour
     void Update()
     {
         //for testing purposes
-        Debug.Log(_audioSource.time);
+        //Debug.Log(_audioSource.time);
 
 
         GetSpectrumAudioSource();

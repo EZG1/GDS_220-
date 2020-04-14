@@ -44,9 +44,19 @@ public class OVRScreenFade : MonoBehaviour
 
     public float currentAlpha { get; private set; }
 
-	/// <summary>
-	/// Automatically starts a fade in
-	/// </summary>
+    /// <summary>
+    /// Automatically starts a fade in
+    /// </summary>
+
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.X))
+        {
+            FadeOut();
+            Debug.Log("trying the fade");
+        }
+    }        
+
 	void Start()
 	{
 		if (gameObject.name.StartsWith("OculusMRC_"))
@@ -112,6 +122,7 @@ public class OVRScreenFade : MonoBehaviour
 		{
 			StartCoroutine(Fade(1, 0));
 		}
+
 	}
 
 	/// <summary>
