@@ -48,14 +48,14 @@ public class OVRScreenFade : MonoBehaviour
     /// Automatically starts a fade in
     /// </summary>
 
-    void Update()
+    /*void Update()
     {
         if (Input.GetKeyDown(KeyCode.X))
         {
             FadeOut();
             Debug.Log("trying the fade");
         }
-    }        
+    }        */
 
 	void Start()
 	{
