@@ -16,6 +16,7 @@ permissions and limitations under the License.
 
 using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 /// <summary>
 /// Sample that allows you to play with various VR settings.
@@ -152,9 +153,20 @@ public class OVRSceneSampleController : MonoBehaviour
         // Escape Application
         if (Input.GetKeyDown(quitKey))
             Application.Quit();
+        if (OVRInput.GetDown(OVRInput.Button.Back))
+        {
+            OVRManager.PlatformUIConfirmQuit();
+        }
 #endif
     }
     #endregion
+    //Quit game function
+    public void QuitGame()
+    {
+        Application.Quit();
+        OVRManager.PlatformUIConfirmQuit();
+    }
+         
 
     /// <summary>
     /// Updates the vision mode.
