@@ -64,10 +64,6 @@ public class A_AudioVisualization : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //for testing purposes
-        //Debug.Log(_audioSource.time);
-
-
         GetSpectrumAudioSource();
         MakeFreuquencyBands();
         BandBuffer();

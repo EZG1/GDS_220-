@@ -28,13 +28,13 @@ public class Ball : MonoBehaviour
 
     void Awake()
     {
-        speedAlteration = Random.Range(1, 10);
+        /*speedAlteration = Random.Range(1, 10);
         if (Random.Range(1,2) == 1)
         {
             speedAlterationMovingUp = false;
         }
         
-        InvokeRepeating("Variation", 1.0f, 0.07f);
+        InvokeRepeating("Variation", 1.0f, 0.07f);*/ //removed speedAlteration for now as it made movement inconsistent
     }
 
     private void Start()
@@ -66,10 +66,10 @@ public class Ball : MonoBehaviour
     {
         if (other.GetComponent<Pillar>())
         {
-            other.GetComponent<Pillar>().Jump(pillarSpeed); // + speedAlteration  /removed speedAlteration for now as it made movement inconsistent
+            other.GetComponent<Pillar>().Jump(pillarSpeed); // + speedAlteration  //removed speedAlteration for now as it made movement inconsistent
         }
 
-        if (canColourChange)
+        if (canColourChange && other.GetComponent<Pillar>())
         {
             other.GetComponent<Pillar>().ChangeColour(colour);
         }

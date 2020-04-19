@@ -148,12 +148,19 @@ public class OVRScreenFade : MonoBehaviour
 		{
 			SetFadeLevel(0);
 		}
+
+        MusicCounter.End += FadeOut; 
 	}
 
-	/// <summary>
-	/// Cleans up the fade material
-	/// </summary>
-	void OnDestroy()
+    private void OnDisable()
+    {
+        MusicCounter.End -= FadeOut;
+    }
+
+    /// <summary>
+    /// Cleans up the fade material
+    /// </summary>
+    void OnDestroy()
 	{
 		if (fadeRenderer != null)
 			Destroy(fadeRenderer);

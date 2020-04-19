@@ -1310,6 +1310,7 @@ GameObject:
   - component: {fileID: 22240852}
   - component: {fileID: 22240853}
   - component: {fileID: 22240854}
+  - component: {fileID: 22240855}
   m_Layer: 0
   m_Name: AudioVisualizationManager
   m_TagString: Untagged
@@ -1465,6 +1466,18 @@ MonoBehaviour:
   volumetricRadius: 28.65
   reverbSend: 0
   enableRfl: 0
+--- !u!114 &22240855
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 22240850}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95d1f3211aec9f14bb99159dfe1de92c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &31278401
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -83950,7 +83963,7 @@ MonoBehaviour:
       ColourChange: 1
       Colour: {r: 0.14901961, g: 0.78431374, b: 0.15686275, a: 0}
       Gradient: 1
-      SecondColour: {r: 0.078431375, g: 0.41568628, b: 0.08235294, a: 0}
+      SecondColour: {r: 0.14328943, g: 0.4339623, b: 0.14666936, a: 0}
       GradientSpeed: 0.01
     PillarSpeed: 15
     DeathTime: 5
@@ -83970,7 +83983,7 @@ MonoBehaviour:
       Colour: {r: 0.078431375, g: 0.41568628, b: 0.08235294, a: 0}
       Gradient: 1
       SecondColour: {r: 0.56078434, g: 0.46666667, b: 0.9529412, a: 0}
-      GradientSpeed: 0.03
+      GradientSpeed: 0.01
     PillarSpeed: 5
     DeathTime: 5
   - Description: 1-2
