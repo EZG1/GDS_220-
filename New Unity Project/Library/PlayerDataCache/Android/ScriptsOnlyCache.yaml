@@ -5,16 +5,16 @@ ScriptsOnlyBuild:
     Assembly-CSharp.dll:
     - A_AudioVisualization
     - A_TransformMod
+    - AudioLerp
     - Ball
     - BallManager
     - ForceField
     - HitBoxTrigger
+    - ONSPAudioSource
     - ONSPSettings
     - Oculus.Platform.PlatformSettings
     - OvrAvatarSettings
     - Pillar
-    - SimplePillar
-    - Wave
     Oculus.VR.Editor.dll:
     - Assets.Oculus.VR.Editor.OVRPlatformToolSettings
     - OVRConfig
@@ -26,11 +26,35 @@ ScriptsOnlyBuild:
     - OVRPlayerController
     - OVRSceneSampleController
     - OVRScreenFade
+    Unity.Postprocessing.Runtime.dll:
+    - UnityEngine.Rendering.PostProcessing.AmbientOcclusion
+    - UnityEngine.Rendering.PostProcessing.AutoExposure
+    - UnityEngine.Rendering.PostProcessing.Bloom
+    - UnityEngine.Rendering.PostProcessing.ChromaticAberration
+    - UnityEngine.Rendering.PostProcessing.ColorGrading
+    - UnityEngine.Rendering.PostProcessing.DepthOfField
+    - UnityEngine.Rendering.PostProcessing.Grain
+    - UnityEngine.Rendering.PostProcessing.LensDistortion
+    - UnityEngine.Rendering.PostProcessing.MotionBlur
+    - UnityEngine.Rendering.PostProcessing.PostProcessProfile
+    - UnityEngine.Rendering.PostProcessing.PostProcessVolume
+    - UnityEngine.Rendering.PostProcessing.ScreenSpaceReflections
+    - UnityEngine.Rendering.PostProcessing.Vignette
     Unity.RenderPipelines.Lightweight.Runtime.dll:
     - UnityEngine.Rendering.LWRP.ForwardRendererData
     - UnityEngine.Rendering.LWRP.LightweightRenderPipelineAsset
     Unity.ShaderGraph.Editor.dll:
+    - UnityEditor.Graphing.GraphObject
     - UnityEditor.ShaderGraph.Drawing.MaterialGraphEditWindow
+    Unity.Timeline.dll:
+    - UnityEngine.Timeline.AnimationPlayableAsset
+    - UnityEngine.Timeline.AnimationTrack
+    - UnityEngine.Timeline.MarkerTrack
+    - UnityEngine.Timeline.SignalAsset
+    - UnityEngine.Timeline.SignalEmitter
+    - UnityEngine.Timeline.SignalReceiver
+    - UnityEngine.Timeline.SignalTrack
+    - UnityEngine.Timeline.TimelineAsset
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
@@ -39,13 +63,8 @@ ScriptsOnlyBuild:
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
-    - UnityEditor.TestTools.TestRunner.TestListCacheData
-    UnityEngine.UI.dll:
-    - UnityEngine.UI.CanvasScaler
-    - UnityEngine.UI.GraphicRaycaster
-    - UnityEngine.UI.Text
   sceneClasses:
-    Assets/Scenes/DavidTestScene.unity:
+    Assets/Scenes/MainScene.unity:
     - Class: 1
       Script: {instanceID: 0}
     - Class: 4
@@ -65,8 +84,6 @@ ScriptsOnlyBuild:
     - Class: 48
       Script: {instanceID: 0}
     - Class: 54
-      Script: {instanceID: 0}
-    - Class: 64
       Script: {instanceID: 0}
     - Class: 65
       Script: {instanceID: 0}
@@ -89,60 +106,94 @@ ScriptsOnlyBuild:
     - Class: 109
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 10042}
+      Script: {instanceID: 10072}
     - Class: 114
-      Script: {instanceID: 10142}
+      Script: {instanceID: 10080}
     - Class: 114
-      Script: {instanceID: 10246}
+      Script: {instanceID: 10146}
     - Class: 114
-      Script: {instanceID: 10398}
+      Script: {instanceID: 10250}
     - Class: 114
-      Script: {instanceID: 10430}
+      Script: {instanceID: 10266}
     - Class: 114
-      Script: {instanceID: 10648}
+      Script: {instanceID: 10284}
     - Class: 114
-      Script: {instanceID: 10730}
+      Script: {instanceID: 10344}
     - Class: 114
-      Script: {instanceID: 10824}
+      Script: {instanceID: 10404}
     - Class: 114
-      Script: {instanceID: 10858}
+      Script: {instanceID: 10570}
     - Class: 114
-      Script: {instanceID: 11090}
+      Script: {instanceID: 10654}
     - Class: 114
-      Script: {instanceID: 11246}
+      Script: {instanceID: 10700}
     - Class: 114
-      Script: {instanceID: 11250}
+      Script: {instanceID: 10736}
     - Class: 114
-      Script: {instanceID: 11318}
+      Script: {instanceID: 10760}
     - Class: 114
-      Script: {instanceID: 11592}
+      Script: {instanceID: 10776}
     - Class: 114
-      Script: {instanceID: 11862}
+      Script: {instanceID: 10834}
     - Class: 114
-      Script: {instanceID: 12044}
+      Script: {instanceID: 10906}
     - Class: 114
-      Script: {instanceID: 12260}
+      Script: {instanceID: 11084}
     - Class: 114
-      Script: {instanceID: 12684}
+      Script: {instanceID: 11096}
     - Class: 114
-      Script: {instanceID: 12714}
+      Script: {instanceID: 11254}
     - Class: 114
-      Script: {instanceID: 12844}
+      Script: {instanceID: 11258}
     - Class: 114
-      Script: {instanceID: 12872}
+      Script: {instanceID: 11298}
     - Class: 114
-      Script: {instanceID: 13346}
+      Script: {instanceID: 11326}
     - Class: 114
-      Script: {instanceID: 13402}
+      Script: {instanceID: 11600}
     - Class: 114
-      Script: {instanceID: 13428}
+      Script: {instanceID: 11692}
     - Class: 114
-      Script: {instanceID: 13538}
+      Script: {instanceID: 11870}
+    - Class: 114
+      Script: {instanceID: 11958}
+    - Class: 114
+      Script: {instanceID: 12052}
+    - Class: 114
+      Script: {instanceID: 12180}
+    - Class: 114
+      Script: {instanceID: 12268}
+    - Class: 114
+      Script: {instanceID: 12692}
+    - Class: 114
+      Script: {instanceID: 12722}
+    - Class: 114
+      Script: {instanceID: 12778}
+    - Class: 114
+      Script: {instanceID: 12852}
+    - Class: 114
+      Script: {instanceID: 12880}
+    - Class: 114
+      Script: {instanceID: 12986}
+    - Class: 114
+      Script: {instanceID: 13410}
+    - Class: 114
+      Script: {instanceID: 13436}
+    - Class: 114
+      Script: {instanceID: 13546}
+    - Class: 114
+      Script: {instanceID: 13648}
+    - Class: 114
+      Script: {instanceID: 13914}
+    - Class: 114
+      Script: {instanceID: 13950}
+    - Class: 114
+      Script: {instanceID: 14010}
+    - Class: 114
+      Script: {instanceID: 14210}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 124
-      Script: {instanceID: 0}
-    - Class: 128
       Script: {instanceID: 0}
     - Class: 135
       Script: {instanceID: 0}
@@ -152,11 +203,17 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 157
       Script: {instanceID: 0}
-    - Class: 222
+    - Class: 198
       Script: {instanceID: 0}
-    - Class: 223
+    - Class: 199
       Script: {instanceID: 0}
-    - Class: 224
+    - Class: 241
+      Script: {instanceID: 0}
+    - Class: 243
+      Script: {instanceID: 0}
+    - Class: 245
+      Script: {instanceID: 0}
+    - Class: 320
       Script: {instanceID: 0}
   scriptHashData:
   - hash:
@@ -323,6 +380,12 @@ ScriptsOnlyBuild:
     className: StartMenu
   - hash:
       serializedVersion: 2
+      Hash: 15af5d908d2ac59d9dfe794262c19a85
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: AudioLerp
+  - hash:
+      serializedVersion: 2
       Hash: c3d3430df9e3ea95e3e3d587961390fb
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
@@ -479,7 +542,7 @@ ScriptsOnlyBuild:
     className: BoardPosition
   - hash:
       serializedVersion: 2
-      Hash: caae83d5fbc18d16d060df76d9ad5dbf
+      Hash: afc3be38a2d4d9fc5f3064981e95ceb1
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: A_AudioVisualization
@@ -569,7 +632,7 @@ ScriptsOnlyBuild:
     className: Vignette
   - hash:
       serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+      Hash: 6d474d80dbc51ecda44ad8b2f7d33053
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Wave
@@ -737,13 +800,19 @@ ScriptsOnlyBuild:
     className: OVRMesh
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: WaveAudioChange
+  - hash:
+      serializedVersion: 2
       Hash: caa533b001ae39b864ba8425019e2268
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: Shadow
   - hash:
       serializedVersion: 2
-      Hash: ac72847f45523345ef36a1977e3baef8
+      Hash: d919a159139ff01f9a20e391c0790afd
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: BallManager
@@ -1853,7 +1922,7 @@ ScriptsOnlyBuild:
     className: BeforeAfterTestCommandState
   - hash:
       serializedVersion: 2
-      Hash: 855bb9883ca0447a2a95bd34b6e5eceb
+      Hash: 1f167188d1014423ea0003982cb58b40
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Ball
@@ -2207,5 +2276,5 @@ ScriptsOnlyBuild:
     className: AutoMobileShaderSwitch
   platform: 13
   scenePathNames:
-  - Assets/Scenes/DavidTestScene.unity
-  playerPath: C:/Users/Karl/Desktop/GDS_220-/New Unity Project/Build.apk
+  - Assets/Scenes/MainScene.unity
+  playerPath: C:/Users/Karl/Desktop/GDS_220-/New Unity Project/TheCauseway.apk
