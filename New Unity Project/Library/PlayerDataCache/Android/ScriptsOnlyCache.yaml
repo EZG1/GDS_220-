@@ -43,9 +43,11 @@ ScriptsOnlyBuild:
     Unity.RenderPipelines.Lightweight.Runtime.dll:
     - UnityEngine.Rendering.LWRP.ForwardRendererData
     - UnityEngine.Rendering.LWRP.LightweightRenderPipelineAsset
-    Unity.ShaderGraph.Editor.dll:
-    - UnityEditor.Graphing.GraphObject
-    - UnityEditor.ShaderGraph.Drawing.MaterialGraphEditWindow
+    - UnityEngine.Rendering.LWRP.LightweightRenderPipelineEditorResources
+    Unity.Timeline.Editor.dll:
+    - UnityEditor.Timeline.EditorClip
+    - UnityEditor.Timeline.SequenceHierarchy
+    - UnityEditor.Timeline.Signals.SignalReceiverInspector
     Unity.Timeline.dll:
     - UnityEngine.Timeline.AnimationPlayableAsset
     - UnityEngine.Timeline.AnimationTrack
@@ -58,11 +60,20 @@ ScriptsOnlyBuild:
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
+    - UnityEditor.TestTools.TestRunner.TestListCacheData
+    UnityEngine.UI.dll:
+    - UnityEngine.EventSystems.EventSystem
+    - UnityEngine.EventSystems.StandaloneInputModule
+    - UnityEngine.UI.CanvasScaler
+    - UnityEngine.UI.GraphicRaycaster
+    - UnityEngine.UI.Image
   sceneClasses:
     Assets/Scenes/MainScene.unity:
     - Class: 1
@@ -106,91 +117,101 @@ ScriptsOnlyBuild:
     - Class: 109
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 10072}
+      Script: {instanceID: 10048}
     - Class: 114
-      Script: {instanceID: 10080}
+      Script: {instanceID: 10074}
     - Class: 114
-      Script: {instanceID: 10146}
+      Script: {instanceID: 10082}
     - Class: 114
-      Script: {instanceID: 10250}
+      Script: {instanceID: 10148}
     - Class: 114
-      Script: {instanceID: 10266}
+      Script: {instanceID: 10252}
     - Class: 114
-      Script: {instanceID: 10284}
+      Script: {instanceID: 10268}
     - Class: 114
-      Script: {instanceID: 10344}
+      Script: {instanceID: 10286}
     - Class: 114
-      Script: {instanceID: 10404}
+      Script: {instanceID: 10348}
     - Class: 114
-      Script: {instanceID: 10570}
+      Script: {instanceID: 10408}
     - Class: 114
-      Script: {instanceID: 10654}
+      Script: {instanceID: 10536}
     - Class: 114
-      Script: {instanceID: 10700}
+      Script: {instanceID: 10574}
     - Class: 114
-      Script: {instanceID: 10736}
+      Script: {instanceID: 10658}
     - Class: 114
-      Script: {instanceID: 10760}
+      Script: {instanceID: 10704}
     - Class: 114
-      Script: {instanceID: 10776}
+      Script: {instanceID: 10740}
     - Class: 114
-      Script: {instanceID: 10834}
+      Script: {instanceID: 10764}
     - Class: 114
-      Script: {instanceID: 10906}
+      Script: {instanceID: 10780}
     - Class: 114
-      Script: {instanceID: 11084}
+      Script: {instanceID: 10838}
     - Class: 114
-      Script: {instanceID: 11096}
+      Script: {instanceID: 10910}
     - Class: 114
-      Script: {instanceID: 11254}
+      Script: {instanceID: 11088}
+    - Class: 114
+      Script: {instanceID: 11100}
     - Class: 114
       Script: {instanceID: 11258}
     - Class: 114
-      Script: {instanceID: 11298}
+      Script: {instanceID: 11262}
     - Class: 114
-      Script: {instanceID: 11326}
+      Script: {instanceID: 11302}
     - Class: 114
-      Script: {instanceID: 11600}
+      Script: {instanceID: 11330}
     - Class: 114
-      Script: {instanceID: 11692}
+      Script: {instanceID: 11420}
     - Class: 114
-      Script: {instanceID: 11870}
+      Script: {instanceID: 11604}
     - Class: 114
-      Script: {instanceID: 11958}
+      Script: {instanceID: 11696}
     - Class: 114
-      Script: {instanceID: 12052}
+      Script: {instanceID: 11874}
     - Class: 114
-      Script: {instanceID: 12180}
+      Script: {instanceID: 11962}
     - Class: 114
-      Script: {instanceID: 12268}
+      Script: {instanceID: 12056}
     - Class: 114
-      Script: {instanceID: 12692}
+      Script: {instanceID: 12184}
     - Class: 114
-      Script: {instanceID: 12722}
+      Script: {instanceID: 12272}
     - Class: 114
-      Script: {instanceID: 12778}
+      Script: {instanceID: 12696}
     - Class: 114
-      Script: {instanceID: 12852}
+      Script: {instanceID: 12726}
     - Class: 114
-      Script: {instanceID: 12880}
+      Script: {instanceID: 12782}
     - Class: 114
-      Script: {instanceID: 12986}
+      Script: {instanceID: 12856}
     - Class: 114
-      Script: {instanceID: 13410}
+      Script: {instanceID: 12884}
     - Class: 114
-      Script: {instanceID: 13436}
+      Script: {instanceID: 12990}
     - Class: 114
-      Script: {instanceID: 13546}
+      Script: {instanceID: 13358}
     - Class: 114
-      Script: {instanceID: 13648}
+      Script: {instanceID: 13414}
     - Class: 114
-      Script: {instanceID: 13914}
+      Script: {instanceID: 13440}
     - Class: 114
-      Script: {instanceID: 13950}
+      Script: {instanceID: 13550}
     - Class: 114
-      Script: {instanceID: 14010}
+      Script: {instanceID: 13652}
     - Class: 114
-      Script: {instanceID: 14210}
+      Script: {instanceID: 13918}
+    - Class: 114
+      Script: {instanceID: 13954}
+    - Class: 114
+      Script: {instanceID: 14014}
+    - Class: 114
+      Script: {instanceID: 14184}
+    - Class: 114
+      Script: {instanceID: 14214}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 124
@@ -206,6 +227,14 @@ ScriptsOnlyBuild:
     - Class: 198
       Script: {instanceID: 0}
     - Class: 199
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
       Script: {instanceID: 0}
     - Class: 241
       Script: {instanceID: 0}

@@ -149,12 +149,12 @@ public class OVRScreenFade : MonoBehaviour
 			SetFadeLevel(0);
 		}
 
-        MusicCounter.End += FadeOut; 
+    //    MusicCounter.End += FadeOut; 
 	}
 
     private void OnDisable()
     {
-        MusicCounter.End -= FadeOut;
+     //   MusicCounter.End -= FadeOut;
     }
 
     /// <summary>

@@ -1310,7 +1310,6 @@ GameObject:
   - component: {fileID: 22240852}
   - component: {fileID: 22240853}
   - component: {fileID: 22240854}
-  - component: {fileID: 22240855}
   m_Layer: 0
   m_Name: AudioVisualizationManager
   m_TagString: Untagged
@@ -1466,18 +1465,6 @@ MonoBehaviour:
   volumetricRadius: 28.65
   reverbSend: 0
   enableRfl: 0
---- !u!114 &22240855
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 22240850}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 95d1f3211aec9f14bb99159dfe1de92c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &31278401
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -59670,7 +59657,7 @@ PrefabInstance:
     - target: {fileID: -927199367670048503, guid: 732ee1e0202b24c42bd68aa4ac1437b2,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 732ee1e0202b24c42bd68aa4ac1437b2,
         type: 3}
@@ -62112,7 +62099,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 3}
       propertyPath: m_LocalPosition.x
@@ -103152,7 +103139,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 100004, guid: ce816f2e6abb0504092c23ed9b970dfd, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: ce816f2e6abb0504092c23ed9b970dfd, type: 3}
       propertyPath: m_RootOrder
