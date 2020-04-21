@@ -62105,7 +62105,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 3}
       propertyPath: m_LocalPosition.x
@@ -83607,12 +83607,12 @@ MonoBehaviour:
       GrowSpeed: 100
     Colouring:
       ColourChange: 0
-      Colour: {r: 0.26415092, g: 0.26415092, b: 0.26415092, a: 0}
+      Colour: {r: 0.60784316, g: 0.18039213, b: 0.6017101, a: 0}
       Gradient: 0
-      SecondColour: {r: 0, g: 0, b: 0, a: 0}
-      GradientSpeed: 0
+      SecondColour: {r: 0.21698111, g: 0.21698111, b: 0.21698111, a: 0}
+      GradientSpeed: 0.4
     PillarSpeed: 5
-    DeathTime: 10
+    DeathTime: 5
   - Description: 2-1
     SpawnIndex: 4
     SpawnCue: 3.3
@@ -83626,12 +83626,12 @@ MonoBehaviour:
       GrowSpeed: 100
     Colouring:
       ColourChange: 0
-      Colour: {r: 0.26415092, g: 0.26415092, b: 0.26415092, a: 0}
+      Colour: {r: 0.56826085, g: 0.18039213, b: 0.60784316, a: 0}
       Gradient: 0
-      SecondColour: {r: 0, g: 0, b: 0, a: 0}
-      GradientSpeed: 0
+      SecondColour: {r: 0.21568628, g: 0.21568628, b: 0.21568628, a: 0}
+      GradientSpeed: 0.15
     PillarSpeed: 5
-    DeathTime: 10
+    DeathTime: 5
   - Description: 3-1
     SpawnIndex: 4
     SpawnCue: 4.3
@@ -83645,14 +83645,14 @@ MonoBehaviour:
       GrowSpeed: 100
     Colouring:
       ColourChange: 0
-      Colour: {r: 0.26415092, g: 0.26415092, b: 0.26415092, a: 0}
+      Colour: {r: 0.4, g: 0.18039213, b: 0.60784316, a: 0}
       Gradient: 0
-      SecondColour: {r: 0, g: 0, b: 0, a: 0}
-      GradientSpeed: 0
+      SecondColour: {r: 0.21568628, g: 0.21568628, b: 0.21568628, a: 0}
+      GradientSpeed: 0.05
     PillarSpeed: 5
-    DeathTime: 10
+    DeathTime: 5
   - Description: INTRO - Ripple In 1-1
-    SpawnIndex: 0
+    SpawnIndex: 4
     SpawnCue: 11.7
     InitialScale: 5
     Movement:
@@ -83664,71 +83664,14 @@ MonoBehaviour:
       GrowSpeed: 100
     Colouring:
       ColourChange: 1
-      Colour: {r: 0.23529412, g: 0.23529412, b: 0.23529412, a: 0}
-      Gradient: 0
-      SecondColour: {r: 0, g: 0, b: 0, a: 0}
-      GradientSpeed: 0
+      Colour: {r: 0.60784316, g: 0.18039216, b: 0.6, a: 0}
+      Gradient: 1
+      SecondColour: {r: 0.21568628, g: 0.21568628, b: 0.21568628, a: 0}
+      GradientSpeed: 0.4
     PillarSpeed: 5
-    DeathTime: 1
-  - Description: 1-2
-    SpawnIndex: 2
-    SpawnCue: 11.7
-    InitialScale: 5
-    Movement:
-      CanMove: 0
-      BallSpeed: 0
-      Direction: {x: 0, y: 0, z: 0}
-    Scaling:
-      CanGrow: 1
-      GrowSpeed: 100
-    Colouring:
-      ColourChange: 1
-      Colour: {r: 0.23529412, g: 0.23529412, b: 0.23529412, a: 0}
-      Gradient: 0
-      SecondColour: {r: 0, g: 0, b: 0, a: 0}
-      GradientSpeed: 0
-    PillarSpeed: 5
-    DeathTime: 1
-  - Description: 1-3
-    SpawnIndex: 6
-    SpawnCue: 11.7
-    InitialScale: 5
-    Movement:
-      CanMove: 0
-      BallSpeed: 0
-      Direction: {x: 0, y: 0, z: 0}
-    Scaling:
-      CanGrow: 1
-      GrowSpeed: 100
-    Colouring:
-      ColourChange: 1
-      Colour: {r: 0.23529412, g: 0.23529412, b: 0.23529412, a: 0}
-      Gradient: 0
-      SecondColour: {r: 0, g: 0, b: 0, a: 0}
-      GradientSpeed: 0
-    PillarSpeed: 5
-    DeathTime: 1
-  - Description: 1-4
-    SpawnIndex: 8
-    SpawnCue: 11.7
-    InitialScale: 5
-    Movement:
-      CanMove: 0
-      BallSpeed: 0
-      Direction: {x: 0, y: 0, z: 0}
-    Scaling:
-      CanGrow: 1
-      GrowSpeed: 100
-    Colouring:
-      ColourChange: 1
-      Colour: {r: 0.23529412, g: 0.23529412, b: 0.23529412, a: 0}
-      Gradient: 0
-      SecondColour: {r: 0, g: 0, b: 0, a: 0}
-      GradientSpeed: 0
-    PillarSpeed: 5
-    DeathTime: 1
-  - Description: Ripple In 2-1
-    SpawnIndex: 0
+    DeathTime: 5
+  - Description: 2-1
+    SpawnIndex: 4
     SpawnCue: 12.7
     InitialScale: 5
     Movement:
@@ -83740,71 +83683,14 @@ MonoBehaviour:
       GrowSpeed: 100
     Colouring:
       ColourChange: 1
-      Colour: {r: 0.39215687, g: 0.39215687, b: 0.47058824, a: 0}
-      Gradient: 0
-      SecondColour: {r: 0, g: 0, b: 0, a: 0}
-      GradientSpeed: 0
+      Colour: {r: 0.5686275, g: 0.18039216, b: 0.60784316, a: 0}
+      Gradient: 1
+      SecondColour: {r: 0.21568628, g: 0.21568628, b: 0.21568628, a: 0}
+      GradientSpeed: 0.15
     PillarSpeed: 5
-    DeathTime: 1
-  - Description: 2-2
-    SpawnIndex: 2
-    SpawnCue: 12.7
-    InitialScale: 5
-    Movement:
-      CanMove: 0
-      BallSpeed: 0
-      Direction: {x: 0, y: 0, z: 0}
-    Scaling:
-      CanGrow: 1
-      GrowSpeed: 100
-    Colouring:
-      ColourChange: 1
-      Colour: {r: 0.39215687, g: 0.39215687, b: 0.47058824, a: 0}
-      Gradient: 0
-      SecondColour: {r: 0, g: 0, b: 0, a: 0}
-      GradientSpeed: 0
-    PillarSpeed: 5
-    DeathTime: 1
-  - Description: 2-3
-    SpawnIndex: 6
-    SpawnCue: 12.7
-    InitialScale: 5
-    Movement:
-      CanMove: 0
-      BallSpeed: 0
-      Direction: {x: 0, y: 0, z: 0}
-    Scaling:
-      CanGrow: 1
-      GrowSpeed: 100
-    Colouring:
-      ColourChange: 1
-      Colour: {r: 0.39215687, g: 0.39215687, b: 0.47058824, a: 0}
-      Gradient: 0
-      SecondColour: {r: 0, g: 0, b: 0, a: 0}
-      GradientSpeed: 0
-    PillarSpeed: 5
-    DeathTime: 1
-  - Description: 2-4
-    SpawnIndex: 8
-    SpawnCue: 12.7
-    InitialScale: 5
-    Movement:
-      CanMove: 0
-      BallSpeed: 0
-      Direction: {x: 0, y: 0, z: 0}
-    Scaling:
-      CanGrow: 1
-      GrowSpeed: 100
-    Colouring:
-      ColourChange: 1
-      Colour: {r: 0.39215687, g: 0.39215687, b: 0.47058824, a: 0}
-      Gradient: 0
-      SecondColour: {r: 0, g: 0, b: 0, a: 0}
-      GradientSpeed: 0
-    PillarSpeed: 5
-    DeathTime: 1
-  - Description: Ripple In 3-1
-    SpawnIndex: 0
+    DeathTime: 5
+  - Description: 3-1
+    SpawnIndex: 4
     SpawnCue: 13.7
     InitialScale: 5
     Movement:
@@ -83816,69 +83702,12 @@ MonoBehaviour:
       GrowSpeed: 100
     Colouring:
       ColourChange: 1
-      Colour: {r: 0.54901963, g: 0.54901963, b: 0.78431374, a: 0}
-      Gradient: 0
-      SecondColour: {r: 0, g: 0, b: 0, a: 0}
-      GradientSpeed: 0
+      Colour: {r: 0.4, g: 0.18039216, b: 0.60784316, a: 0}
+      Gradient: 1
+      SecondColour: {r: 0.21568628, g: 0.21568628, b: 0.21568628, a: 0}
+      GradientSpeed: 0.05
     PillarSpeed: 5
-    DeathTime: 1
-  - Description: 3-2
-    SpawnIndex: 2
-    SpawnCue: 13.7
-    InitialScale: 5
-    Movement:
-      CanMove: 0
-      BallSpeed: 0
-      Direction: {x: 0, y: 0, z: 0}
-    Scaling:
-      CanGrow: 1
-      GrowSpeed: 100
-    Colouring:
-      ColourChange: 1
-      Colour: {r: 0.54901963, g: 0.54901963, b: 0.78431374, a: 0}
-      Gradient: 0
-      SecondColour: {r: 0, g: 0, b: 0, a: 0}
-      GradientSpeed: 0
-    PillarSpeed: 5
-    DeathTime: 1
-  - Description: 3-3
-    SpawnIndex: 6
-    SpawnCue: 13.7
-    InitialScale: 5
-    Movement:
-      CanMove: 0
-      BallSpeed: 0
-      Direction: {x: 0, y: 0, z: 0}
-    Scaling:
-      CanGrow: 1
-      GrowSpeed: 100
-    Colouring:
-      ColourChange: 1
-      Colour: {r: 0.54901963, g: 0.54901963, b: 0.78431374, a: 0}
-      Gradient: 0
-      SecondColour: {r: 0, g: 0, b: 0, a: 0}
-      GradientSpeed: 0
-    PillarSpeed: 5
-    DeathTime: 1
-  - Description: 3-4
-    SpawnIndex: 8
-    SpawnCue: 13.7
-    InitialScale: 5
-    Movement:
-      CanMove: 0
-      BallSpeed: 0
-      Direction: {x: 0, y: 0, z: 0}
-    Scaling:
-      CanGrow: 1
-      GrowSpeed: 100
-    Colouring:
-      ColourChange: 1
-      Colour: {r: 0.54901963, g: 0.54901963, b: 0.78431374, a: 0}
-      Gradient: 0
-      SecondColour: {r: 0, g: 0, b: 0, a: 0}
-      GradientSpeed: 0
-    PillarSpeed: 5
-    DeathTime: 1
+    DeathTime: 5
   - Description: BEAT
     SpawnIndex: 4
     SpawnCue: 18.5
@@ -83892,7 +83721,7 @@ MonoBehaviour:
       GrowSpeed: 100
     Colouring:
       ColourChange: 1
-      Colour: {r: 0.13020648, g: 0.19009936, b: 0.7264151, a: 0}
+      Colour: {r: 0.4, g: 0.18039216, b: 0.60784316, a: 0}
       Gradient: 0
       SecondColour: {r: 0, g: 0, b: 0, a: 0}
       GradientSpeed: 0
@@ -83967,11 +83796,11 @@ MonoBehaviour:
       CanGrow: 1
       GrowSpeed: 100
     Colouring:
-      ColourChange: 0
-      Colour: {r: 0.19428623, g: 0.19428623, b: 0.5566038, a: 0}
-      Gradient: 0
-      SecondColour: {r: 0, g: 0, b: 0, a: 0}
-      GradientSpeed: 0
+      ColourChange: 1
+      Colour: {r: 0.4, g: 0.18039216, b: 0.60784316, a: 0}
+      Gradient: 1
+      SecondColour: {r: 0.2627451, g: 0.7372549, b: 0.8039216, a: 0}
+      GradientSpeed: 0.005
     PillarSpeed: 10
     DeathTime: 5
   - Description: Shoot 2-1
@@ -84100,9 +83929,9 @@ MonoBehaviour:
       CanGrow: 1
       GrowSpeed: 100
     Colouring:
-      ColourChange: 1
+      ColourChange: 0
       Colour: {r: 0.19428623, g: 0.19428623, b: 0.5566038, a: 0}
-      Gradient: 1
+      Gradient: 0
       SecondColour: {r: 0.14901961, g: 0.78431374, b: 0.15686275, a: 0}
       GradientSpeed: 0.03
     PillarSpeed: 10
@@ -84120,49 +83949,125 @@ MonoBehaviour:
       GrowSpeed: 100
     Colouring:
       ColourChange: 1
-      Colour: {r: 0.14901961, g: 0.78431374, b: 0.15686275, a: 0}
-      Gradient: 1
+      Colour: {r: 0.36862746, g: 0.32156864, b: 0.65882355, a: 0}
+      Gradient: 0
       SecondColour: {r: 0.14328943, g: 0.4339623, b: 0.14666936, a: 0}
       GradientSpeed: 0.01
     PillarSpeed: 15
     DeathTime: 5
-  - Description: Wave 1-1
-    SpawnIndex: 5
+  - Description: Fork 1-1
+    SpawnIndex: 0
     SpawnCue: 40.8
-    InitialScale: 10
+    InitialScale: 15
     Movement:
-      CanMove: 0
+      CanMove: 1
       BallSpeed: 60
-      Direction: {x: 1, y: 0, z: 0}
+      Direction: {x: -1, y: 0, z: 0}
     Scaling:
-      CanGrow: 1
+      CanGrow: 0
       GrowSpeed: 100
     Colouring:
       ColourChange: 1
-      Colour: {r: 0.078431375, g: 0.41568628, b: 0.08235294, a: 0}
-      Gradient: 1
+      Colour: {r: 0.33333334, g: 0.45882353, b: 0.7058824, a: 0}
+      Gradient: 0
       SecondColour: {r: 0.56078434, g: 0.46666667, b: 0.9529412, a: 0}
       GradientSpeed: 0.01
-    PillarSpeed: 5
+    PillarSpeed: 10
     DeathTime: 5
   - Description: 1-2
     SpawnIndex: 3
-    SpawnCue: 43
-    InitialScale: 5
+    SpawnCue: 40.8
+    InitialScale: 15
     Movement:
-      CanMove: 0
+      CanMove: 1
       BallSpeed: 60
-      Direction: {x: 1, y: 0, z: 0}
+      Direction: {x: -1, y: 0, z: 0}
     Scaling:
-      CanGrow: 1
+      CanGrow: 0
       GrowSpeed: 100
     Colouring:
       ColourChange: 1
-      Colour: {r: 0.56078434, g: 0.46666667, b: 0.9529412, a: 0}
-      Gradient: 1
+      Colour: {r: 0.33333334, g: 0.45882353, b: 0.7058824, a: 0}
+      Gradient: 0
+      SecondColour: {r: 0.56078434, g: 0.46666667, b: 0.9529412, a: 0}
+      GradientSpeed: 0.01
+    PillarSpeed: 10
+    DeathTime: 5
+  - Description: 1-3
+    SpawnIndex: 6
+    SpawnCue: 40.8
+    InitialScale: 15
+    Movement:
+      CanMove: 1
+      BallSpeed: 60
+      Direction: {x: -1, y: 0, z: 0}
+    Scaling:
+      CanGrow: 0
+      GrowSpeed: 100
+    Colouring:
+      ColourChange: 1
+      Colour: {r: 0.33333334, g: 0.45882353, b: 0.7058824, a: 0}
+      Gradient: 0
+      SecondColour: {r: 0.56078434, g: 0.46666667, b: 0.9529412, a: 0}
+      GradientSpeed: 0.01
+    PillarSpeed: 10
+    DeathTime: 5
+  - Description: 2-1
+    SpawnIndex: 6
+    SpawnCue: 43
+    InitialScale: 15
+    Movement:
+      CanMove: 1
+      BallSpeed: 60
+      Direction: {x: 0, y: 0, z: 1}
+    Scaling:
+      CanGrow: 0
+      GrowSpeed: 100
+    Colouring:
+      ColourChange: 1
+      Colour: {r: 0.29803923, g: 0.6, b: 0.75686276, a: 0}
+      Gradient: 0
       SecondColour: {r: 0.3764706, g: 0.19215687, b: 0.6509804, a: 0}
       GradientSpeed: 0.03
-    PillarSpeed: 5
+    PillarSpeed: 10
+    DeathTime: 5
+  - Description: 2-2
+    SpawnIndex: 7
+    SpawnCue: 43
+    InitialScale: 15
+    Movement:
+      CanMove: 1
+      BallSpeed: 60
+      Direction: {x: 0, y: 0, z: 1}
+    Scaling:
+      CanGrow: 0
+      GrowSpeed: 100
+    Colouring:
+      ColourChange: 1
+      Colour: {r: 0.29803923, g: 0.6, b: 0.75686276, a: 0}
+      Gradient: 0
+      SecondColour: {r: 0.3764706, g: 0.19215687, b: 0.6509804, a: 0}
+      GradientSpeed: 0.03
+    PillarSpeed: 10
+    DeathTime: 5
+  - Description: 2-3
+    SpawnIndex: 8
+    SpawnCue: 43
+    InitialScale: 15
+    Movement:
+      CanMove: 1
+      BallSpeed: 60
+      Direction: {x: 0, y: 0, z: 1}
+    Scaling:
+      CanGrow: 0
+      GrowSpeed: 100
+    Colouring:
+      ColourChange: 1
+      Colour: {r: 0.29803923, g: 0.6, b: 0.75686276, a: 0}
+      Gradient: 0
+      SecondColour: {r: 0.3764706, g: 0.19215687, b: 0.6509804, a: 0}
+      GradientSpeed: 0.03
+    PillarSpeed: 10
     DeathTime: 5
   - Description: Pump 1-1
     SpawnIndex: 4
@@ -84176,8 +84081,8 @@ MonoBehaviour:
       CanGrow: 0
       GrowSpeed: 100
     Colouring:
-      ColourChange: 0
-      Colour: {r: 0.37529728, g: 0.19037023, b: 0.6509434, a: 0}
+      ColourChange: 1
+      Colour: {r: 0.33333334, g: 0.45882353, b: 0.7058824, a: 0}
       Gradient: 0
       SecondColour: {r: 0, g: 0, b: 0, a: 0}
       GradientSpeed: 0
@@ -84195,8 +84100,8 @@ MonoBehaviour:
       CanGrow: 0
       GrowSpeed: 100
     Colouring:
-      ColourChange: 0
-      Colour: {r: 0.37529728, g: 0.19037023, b: 0.6509434, a: 0}
+      ColourChange: 1
+      Colour: {r: 0.33333334, g: 0.45882353, b: 0.7058824, a: 0}
       Gradient: 0
       SecondColour: {r: 0, g: 0, b: 0, a: 0}
       GradientSpeed: 0
@@ -84214,8 +84119,8 @@ MonoBehaviour:
       CanGrow: 0
       GrowSpeed: 20
     Colouring:
-      ColourChange: 0
-      Colour: {r: 0.37529728, g: 0.19037023, b: 0.6509434, a: 0}
+      ColourChange: 1
+      Colour: {r: 0.33333334, g: 0.45882353, b: 0.7058824, a: 0}
       Gradient: 0
       SecondColour: {r: 0, g: 0, b: 0, a: 0}
       GradientSpeed: 0
@@ -84233,8 +84138,8 @@ MonoBehaviour:
       CanGrow: 1
       GrowSpeed: 20
     Colouring:
-      ColourChange: 0
-      Colour: {r: 0.37529728, g: 0.19037023, b: 0.6509434, a: 0}
+      ColourChange: 1
+      Colour: {r: 0.33333334, g: 0.45882353, b: 0.7058824, a: 0}
       Gradient: 0
       SecondColour: {r: 0, g: 0, b: 0, a: 0}
       GradientSpeed: 0
@@ -84253,10 +84158,10 @@ MonoBehaviour:
       GrowSpeed: 20
     Colouring:
       ColourChange: 1
-      Colour: {r: 0.6792453, g: 0.37166253, b: 0.6612843, a: 0}
-      Gradient: 0
-      SecondColour: {r: 0, g: 0, b: 0, a: 0}
-      GradientSpeed: 0
+      Colour: {r: 0.4, g: 0.18039216, b: 0.60784316, a: 0}
+      Gradient: 1
+      SecondColour: {r: 0.2627451, g: 0.7372549, b: 0.8039216, a: 0}
+      GradientSpeed: 0.05
     PillarSpeed: 10
     DeathTime: 5
   - Description: 1-2
@@ -84272,7 +84177,7 @@ MonoBehaviour:
       GrowSpeed: 20
     Colouring:
       ColourChange: 1
-      Colour: {r: 0.68235296, g: 0.37254903, b: 0.6627451, a: 0}
+      Colour: {r: 0.2627451, g: 0.7372549, b: 0.8039216, a: 0}
       Gradient: 0
       SecondColour: {r: 0, g: 0, b: 0, a: 0}
       GradientSpeed: 0
@@ -84291,10 +84196,10 @@ MonoBehaviour:
       GrowSpeed: 20
     Colouring:
       ColourChange: 1
-      Colour: {r: 0.68235296, g: 0.37254903, b: 0.6627451, a: 0}
-      Gradient: 0
-      SecondColour: {r: 0, g: 0, b: 0, a: 0}
-      GradientSpeed: 0
+      Colour: {r: 0.2627451, g: 0.7372549, b: 0.8039216, a: 0}
+      Gradient: 1
+      SecondColour: {r: 0.4, g: 0.18039216, b: 0.60784316, a: 0}
+      GradientSpeed: 0.05
     PillarSpeed: 10
     DeathTime: 5
   - Description: 1-4
@@ -84310,7 +84215,7 @@ MonoBehaviour:
       GrowSpeed: 20
     Colouring:
       ColourChange: 1
-      Colour: {r: 0.68235296, g: 0.37254903, b: 0.6627451, a: 0}
+      Colour: {r: 0.4, g: 0.18039216, b: 0.60784316, a: 0}
       Gradient: 0
       SecondColour: {r: 0, g: 0, b: 0, a: 0}
       GradientSpeed: 0
@@ -84328,7 +84233,7 @@ MonoBehaviour:
       CanGrow: 0
       GrowSpeed: 20
     Colouring:
-      ColourChange: 1
+      ColourChange: 0
       Colour: {r: 0.68235296, g: 0.37254903, b: 0.6627451, a: 0}
       Gradient: 0
       SecondColour: {r: 0, g: 0, b: 0, a: 0}
@@ -84347,7 +84252,7 @@ MonoBehaviour:
       CanGrow: 0
       GrowSpeed: 20
     Colouring:
-      ColourChange: 1
+      ColourChange: 0
       Colour: {r: 0.68235296, g: 0.37254903, b: 0.6627451, a: 0}
       Gradient: 0
       SecondColour: {r: 0, g: 0, b: 0, a: 0}
@@ -84367,10 +84272,10 @@ MonoBehaviour:
       GrowSpeed: 60
     Colouring:
       ColourChange: 1
-      Colour: {r: 0.6320754, g: 0.09540761, b: 0.5950135, a: 0}
-      Gradient: 0
-      SecondColour: {r: 0, g: 0, b: 0, a: 0}
-      GradientSpeed: 0
+      Colour: {r: 0.2627451, g: 0.7372549, b: 0.8039216, a: 0}
+      Gradient: 1
+      SecondColour: {r: 0.31095237, g: 0.25275898, b: 0.6698113, a: 0}
+      GradientSpeed: 0.02
     PillarSpeed: 10
     DeathTime: 5
   - Description: Ring 1-1
@@ -84462,7 +84367,7 @@ MonoBehaviour:
       GrowSpeed: 20
     Colouring:
       ColourChange: 1
-      Colour: {r: 0.745283, g: 0, b: 0.072398804, a: 0}
+      Colour: {r: 0.4, g: 0.18039216, b: 0.60784316, a: 0}
       Gradient: 0
       SecondColour: {r: 0, g: 0, b: 0, a: 0}
       GradientSpeed: 0
@@ -84481,7 +84386,7 @@ MonoBehaviour:
       GrowSpeed: 20
     Colouring:
       ColourChange: 1
-      Colour: {r: 0.745283, g: 0, b: 0.072398804, a: 0}
+      Colour: {r: 0.4, g: 0.18039216, b: 0.60784316, a: 0}
       Gradient: 0
       SecondColour: {r: 0, g: 0, b: 0, a: 0}
       GradientSpeed: 0
@@ -84500,7 +84405,7 @@ MonoBehaviour:
       GrowSpeed: 20
     Colouring:
       ColourChange: 1
-      Colour: {r: 0.745283, g: 0, b: 0.072398804, a: 0}
+      Colour: {r: 0.4, g: 0.18039216, b: 0.60784316, a: 0}
       Gradient: 0
       SecondColour: {r: 0, g: 0, b: 0, a: 0}
       GradientSpeed: 0
@@ -84519,7 +84424,7 @@ MonoBehaviour:
       GrowSpeed: 20
     Colouring:
       ColourChange: 1
-      Colour: {r: 0.745283, g: 0, b: 0.072398804, a: 0}
+      Colour: {r: 0.4, g: 0.18039216, b: 0.60784316, a: 0}
       Gradient: 0
       SecondColour: {r: 0, g: 0, b: 0, a: 0}
       GradientSpeed: 0
@@ -84557,7 +84462,7 @@ MonoBehaviour:
       GrowSpeed: 20
     Colouring:
       ColourChange: 1
-      Colour: {r: 0.74509805, g: 0.15284473, b: 0, a: 0}
+      Colour: {r: 0.31440657, g: 0.18039213, b: 0.60784316, a: 0}
       Gradient: 0
       SecondColour: {r: 0, g: 0, b: 0, a: 0}
       GradientSpeed: 0
@@ -84576,7 +84481,7 @@ MonoBehaviour:
       GrowSpeed: 20
     Colouring:
       ColourChange: 1
-      Colour: {r: 0.8584906, g: 0.40895346, b: 0.089088656, a: 0}
+      Colour: {r: 0.349554, g: 0.22071911, b: 0.754717, a: 0}
       Gradient: 0
       SecondColour: {r: 0, g: 0, b: 0, a: 0}
       GradientSpeed: 0
@@ -84595,7 +84500,7 @@ MonoBehaviour:
       GrowSpeed: 20
     Colouring:
       ColourChange: 1
-      Colour: {r: 0.8490566, g: 0.6234118, b: 0.32840872, a: 0}
+      Colour: {r: 0.18039213, g: 0.2632717, b: 0.60784316, a: 0}
       Gradient: 0
       SecondColour: {r: 0, g: 0, b: 0, a: 0}
       GradientSpeed: 0
@@ -84614,7 +84519,7 @@ MonoBehaviour:
       GrowSpeed: 20
     Colouring:
       ColourChange: 1
-      Colour: {r: 0.8650891, g: 0.8773585, b: 0.3559096, a: 0}
+      Colour: {r: 0.25658596, g: 0.554978, b: 0.8773585, a: 0}
       Gradient: 0
       SecondColour: {r: 0, g: 0, b: 0, a: 0}
       GradientSpeed: 0
@@ -84633,7 +84538,7 @@ MonoBehaviour:
       GrowSpeed: 20
     Colouring:
       ColourChange: 1
-      Colour: {r: 0.8514861, g: 0.8584906, b: 0.66411537, a: 0}
+      Colour: {r: 0.34158066, g: 0.8775316, b: 0.9528302, a: 0}
       Gradient: 0
       SecondColour: {r: 0, g: 0, b: 0, a: 0}
       GradientSpeed: 0
@@ -84690,7 +84595,7 @@ MonoBehaviour:
       GrowSpeed: 100
     Colouring:
       ColourChange: 1
-      Colour: {r: 1, g: 1, b: 1, a: 0}
+      Colour: {r: 0.6201495, g: 0.97742975, b: 0.9811321, a: 0}
       Gradient: 0
       SecondColour: {r: 0, g: 0, b: 0, a: 0}
       GradientSpeed: 0
@@ -84728,7 +84633,7 @@ MonoBehaviour:
       GrowSpeed: 100
     Colouring:
       ColourChange: 1
-      Colour: {r: 1, g: 1, b: 1, a: 0}
+      Colour: {r: 0.61960787, g: 0.9764706, b: 0.98039216, a: 0}
       Gradient: 0
       SecondColour: {r: 0, g: 0, b: 0, a: 0}
       GradientSpeed: 0
@@ -84766,7 +84671,7 @@ MonoBehaviour:
       GrowSpeed: 100
     Colouring:
       ColourChange: 1
-      Colour: {r: 1, g: 1, b: 1, a: 0}
+      Colour: {r: 0.61960787, g: 0.9764706, b: 0.98039216, a: 0}
       Gradient: 0
       SecondColour: {r: 0, g: 0, b: 0, a: 0}
       GradientSpeed: 0
@@ -84804,7 +84709,7 @@ MonoBehaviour:
       GrowSpeed: 100
     Colouring:
       ColourChange: 1
-      Colour: {r: 1, g: 1, b: 1, a: 0}
+      Colour: {r: 0.61960787, g: 0.9764706, b: 0.98039216, a: 0}
       Gradient: 0
       SecondColour: {r: 0, g: 0, b: 0, a: 0}
       GradientSpeed: 0
@@ -84842,7 +84747,7 @@ MonoBehaviour:
       GrowSpeed: 100
     Colouring:
       ColourChange: 1
-      Colour: {r: 1, g: 1, b: 1, a: 0}
+      Colour: {r: 0.61960787, g: 0.9764706, b: 0.98039216, a: 0}
       Gradient: 0
       SecondColour: {r: 0, g: 0, b: 0, a: 0}
       GradientSpeed: 0
@@ -84880,7 +84785,7 @@ MonoBehaviour:
       GrowSpeed: 100
     Colouring:
       ColourChange: 1
-      Colour: {r: 1, g: 1, b: 1, a: 0}
+      Colour: {r: 0.61960787, g: 0.9764706, b: 0.98039216, a: 0}
       Gradient: 0
       SecondColour: {r: 0, g: 0, b: 0, a: 0}
       GradientSpeed: 0
